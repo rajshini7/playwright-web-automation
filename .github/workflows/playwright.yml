@@ -34,14 +34,16 @@ jobs:
         env:
           CI: true
           BASE_URL: ${{ secrets.BASE_URL }}
+          LOGIN_PATH: /practice-test-login/
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           echo "🔐 Secrets check:"
           echo "BASE_URL set: $([[ -n \"$BASE_URL\" ]] && echo yes || echo no)"
+          echo "LOGIN_PATH set: $([[ -n \"$LOGIN_PATH\" ]] && echo yes || echo no)"
           echo "USERNAME set: $([[ -n \"$USERNAME\" ]] && echo yes || echo no)"
           echo "PASSWORD set: $([[ -n \"$PASSWORD\" ]] && echo yes || echo no)"
-          npx playwright test tests/replay.spec.ts
+          npm run replay
 
       - name: Upload replay report
         if: always()
