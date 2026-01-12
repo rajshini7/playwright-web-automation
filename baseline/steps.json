@@ -591,6 +591,21 @@
         "tag": "strong",
         "text": "Beyond Test Automation",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5) > strong"
+      },
+      {
+        "tag": "p",
+        "text": "Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(6)"
+      },
+      {
+        "tag": "p",
+        "text": "Courses and Achievements",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7)"
+      },
+      {
+        "tag": "strong",
+        "text": "Courses and Achievements",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7) > strong"
       }
     ],
     "_seen": {}
