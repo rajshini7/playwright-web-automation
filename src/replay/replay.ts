@@ -1,4 +1,21 @@
-// src/replay/replay.ts
+import dotenv from "dotenv";
+
+/**
+ * 🔒 HARD RESET for REPLAY
+ * Remove record-only vars, then load .env.ci
+ */
+for (const k of Object.keys(process.env)) {
+  if (k.startsWith("LOGIN_")) {
+    delete process.env[k];
+  }
+}
+
+dotenv.config({
+  path: ".env.ci",
+  override: true,
+});
+
+
 import { Page } from "playwright";
 import fs from "fs";
 import path from "path";
@@ -8,25 +25,33 @@ import { captureFailureScreenshot } from "./artifacts/screenshot";
 
 /* ================= TYPES ================= */
 
-type ContentSnapshot = {
-  title?: string;
-  h1?: string;
-  firstP?: string;
-  metaDescription?: string;
-  bodySnippet?: string;
+type VisibleItem = {
+  tag: string;
+  text: string;
+  locator: string;
+  boundingBox: {
+    top: number;
+    left: number;
+    width: number;
+    height: number;
+  };
+  scrollY: number;
 };
 
-type Step = {
-  selector: string | null;
+type PageRecord = {
+  pageIndex: number;
   url: string;
-  target_href: string;
-  content: ContentSnapshot;
-  timestamp: number;
+  viewport: {
+    width: number;
+    height: number;
+  };
+  maxScrollY: number;
+  items: VisibleItem[];
 };
 
-type StepResult = Step & {
-  liveContent: ContentSnapshot;
+type PageResult = PageRecord & {
   pass: boolean;
+  failureReason?: string;
   screenshotPath?: string;
 };
 
@@ -38,118 +63,155 @@ const REPORT_FILE = path.join(process.cwd(), "replay-report.html");
 
 /* ================= HELPERS ================= */
 
-function loadSteps(): Step[] {
+function loadPages(): PageRecord[] {
   if (!fs.existsSync(STEPS_FILE)) {
     throw new Error(`${STEPS_FILE} not found. Run recorder first.`);
   }
-  return JSON.parse(fs.readFileSync(STEPS_FILE, "utf-8")) as Step[];
+  return JSON.parse(fs.readFileSync(STEPS_FILE, "utf-8")) as PageRecord[];
 }
 
-function normalize(text?: string) {
-  return (text || "").replace(/\s+/g, " ").trim();
-}
-
-/* 🔧 NEW: Embed screenshot as Base64 (REQUIRED CHANGE ONLY) */
 function embedImageBase64(filePath: string): string {
   const buffer = fs.readFileSync(filePath);
-  const base64 = buffer.toString("base64");
-  return `data:image/png;base64,${base64}`;
+  return `data:image/png;base64,${buffer.toString("base64")}`;
 }
 
-/* ================= CONTENT EXTRACTION ================= */
+/* ================= EXACT RECORDER EXTRACTION ================= */
 
-async function extractContent(page: Page): Promise<ContentSnapshot> {
-  await page.waitForLoadState("domcontentloaded");
-
-  return page.evaluate(() => {
-    const title = document.title || "";
-    const h1 = document.querySelector("h1")?.textContent?.trim() || "";
-
-    function extractFirstP(): string {
-      const root = document.querySelector("#mw-content-text");
-      const candidates: HTMLParagraphElement[] = [];
-      if (root) candidates.push(...Array.from(root.querySelectorAll("p")));
-      candidates.push(...Array.from(document.querySelectorAll("p")));
-
-      for (const p of candidates) {
-        const txt = (p.textContent || "").replace(/\s+/g, " ").trim();
-        if (txt.length > 40) return txt;
-      }
-
-      return document.body.innerText
-        .replace(/\s+/g, " ")
-        .trim()
-        .slice(0, 200);
+async function extractVisibleContent(page: Page): Promise<VisibleItem[]> {
+  return await page.evaluate(() => {
+    function isVisible(el: HTMLElement) {
+      const r = el.getBoundingClientRect();
+      const s = window.getComputedStyle(el);
+      return (
+        r.width > 0 &&
+        r.height > 0 &&
+        s.display !== "none" &&
+        s.visibility !== "hidden" &&
+        s.opacity !== "0"
+      );
     }
 
-    const metaDescription =
-      (document.querySelector(
-        'meta[name="description"]'
-      ) as HTMLMetaElement | null)?.content || "";
+    const items: VisibleItem[] = [];
 
-    return {
-      title,
-      h1,
-      firstP: extractFirstP(),
-      metaDescription,
-    };
+    document.querySelectorAll("body *").forEach(el => {
+      const element = el as HTMLElement;
+      if (!isVisible(element)) return;
+
+      const text = element.innerText?.replace(/\s+/g, " ").trim();
+      if (!text) return;
+
+      const rect = element.getBoundingClientRect();
+
+      // EXACT locator strategy used by recorder
+      let locator = "";
+      if (element.id) {
+        locator = `#${element.id}`;
+      } else {
+        const path = [];
+        let curr: HTMLElement | null = element;
+        while (curr && curr.tagName.toLowerCase() !== "body") {
+          let selector = curr.tagName.toLowerCase();
+          const parent = curr.parentElement;
+          if (parent) {
+            const siblings = Array.from(parent.children).filter(
+              e => e.tagName === curr!.tagName
+            );
+            if (siblings.length > 1) {
+              selector += `:nth-of-type(${siblings.indexOf(curr) + 1})`;
+            }
+          }
+          path.unshift(selector);
+          curr = curr.parentElement;
+        }
+        locator = path.join(" > ");
+      }
+
+      items.push({
+        tag: element.tagName.toLowerCase(),
+        text,
+        locator,
+        boundingBox: {
+          top: rect.top,
+          left: rect.left,
+          width: rect.width,
+          height: rect.height,
+        },
+        scrollY: window.scrollY,
+      });
+    });
+
+    return items;
   });
 }
 
 /* ================= ENTRY ================= */
 
 export async function runReplay(): Promise<void> {
-  const steps = loadSteps();
-
-  if (!steps.length) {
-    console.log("⚠️ No recorded steps found. Skipping replay.");
+  const pages = loadPages();
+  if (!pages.length) {
+    console.log("⚠️ No recorded pages found.");
     return;
   }
 
-  const results: StepResult[] = [];
-  let page: Page;
+  const results: PageResult[] = [];
 
-  try {
-    console.log("🔑 Starting headless login for replay...");
-    page = await loginForReplay();
-    console.log("✅ Login successful. Starting replay...");
+  console.log("🔑 Starting replay login...");
+  const page = await loginForReplay();
+  console.log("✅ Login successful. Starting replay...");
 
-    for (let i = 0; i < steps.length; i++) {
-      const step = steps[i];
+  for (const record of pages) {
+    console.log(`\n▶ Verifying page ${record.pageIndex + 1}: ${record.url}`);
 
-      console.log(`\n▶ Step ${i + 1}: ${step.target_href}`);
+    await page.setViewportSize(record.viewport);
+    await page.goto(record.url, { waitUntil: "load", timeout: 60_000 });
 
-      await page.goto(step.target_href, {
-        waitUntil: "domcontentloaded",
-        timeout: 60_000,
-      });
+    await page.evaluate(y => window.scrollTo(0, y), record.maxScrollY);
+    await page.waitForTimeout(500);
 
-      await page.waitForTimeout(1000);
+    const liveItems = await extractVisibleContent(page);
 
-      const live = await extractContent(page);
+    let pass = true;
+    let failureReason: string | undefined;
 
-      const recordedFP = normalize(step.content.firstP);
-      const liveFP = normalize(live.firstP);
-      const pass = recordedFP === liveFP;
+    for (const baselineItem of record.items) {
+  const match = liveItems.find(live =>
+    live.tag === baselineItem.tag &&
+    live.text === baselineItem.text &&
+    live.locator === baselineItem.locator
+  );
 
-      let screenshotPath: string | undefined;
+  if (!match) {
+    pass = false;
+    failureReason = `Missing element: <${baselineItem.tag}> "${baselineItem.text.slice(0, 80)}..."`;
+    break;
+  }
 
-      if (!pass) {
-        screenshotPath = await captureFailureScreenshot(page, i + 1);
-      }
+  // visibility sanity only (not layout precision)
+  if (
+    match.boundingBox.width <= 0 ||
+    match.boundingBox.height <= 0
+  ) {
+    pass = false;
+    failureReason = `Element not visible: "${baselineItem.text.slice(0, 80)}..."`;
+    break;
+  }
+}
 
-      results.push({
-        ...step,
-        liveContent: live,
-        pass,
-        screenshotPath,
-      });
 
-      await page.waitForTimeout(500);
+    let screenshotPath: string | undefined;
+    if (!pass) {
+      screenshotPath = await captureFailureScreenshot(
+        page,
+        record.pageIndex + 1
+      );
     }
-  } catch (err) {
-    console.error("❌ Replay crashed:", err);
-    throw err;
+
+    results.push({
+      ...record,
+      pass,
+      failureReason,
+      screenshotPath,
+    });
   }
 
   /* ================= REPORT ================= */
@@ -160,46 +222,25 @@ export async function runReplay(): Promise<void> {
   <title>Replay Report</title>
   <style>
     body { font-family: sans-serif; padding: 20px; }
-    .step { border: 1px solid #ccc; margin-bottom: 20px; padding: 10px; }
+    .page { border: 1px solid #ccc; margin-bottom: 20px; padding: 10px; }
     .pass { color: green; font-weight: bold; }
     .fail { color: red; font-weight: bold; }
-    pre { white-space: pre-wrap; }
-    img { margin-top: 10px; max-width: 100%; border: 1px solid #999; }
+    img { margin-top: 10px; max-width: 100%; }
   </style>
 </head>
 <body>
-  <h1>Web Replay Report</h1>
-
-  ${results
-    .map(
-      (r, i) => `
-    <div class="step">
+  <h1>Replay Verification Report</h1>
+  ${results.map(r => `
+    <div class="page">
       <h2>
-        Step ${i + 1} —
+        Page ${r.pageIndex + 1} —
         ${r.pass ? '<span class="pass">PASS</span>' : '<span class="fail">FAIL</span>'}
       </h2>
-
-      <p><strong>Opened URL:</strong> ${r.target_href}</p>
-
-      <p><strong>Recorded firstP:</strong></p>
-      <pre>${r.content.firstP || ""}</pre>
-
-      <p><strong>Live firstP:</strong></p>
-      <pre>${r.liveContent.firstP || ""}</pre>
-
-      ${
-        !r.pass && r.screenshotPath
-          ? `
-        <h3>Failure Screenshot</h3>
-        <img src="${embedImageBase64(r.screenshotPath)}" />
-      `
-          : ""
-      }
+      <p><strong>URL:</strong> ${r.url}</p>
+      ${r.failureReason ? `<p><strong>Reason:</strong> ${r.failureReason}</p>` : ""}
+      ${r.screenshotPath ? `<img src="${embedImageBase64(r.screenshotPath)}" />` : ""}
     </div>
-  `
-    )
-    .join("")}
-
+  `).join("")}
 </body>
 </html>
 `;
@@ -207,8 +248,7 @@ export async function runReplay(): Promise<void> {
   fs.writeFileSync(REPORT_FILE, reportHtml);
   console.log(`📄 Replay report generated → ${REPORT_FILE}`);
 
-  const failed = results.find(r => !r.pass);
-  if (failed) {
+  if (results.some(r => !r.pass)) {
     throw new Error("❌ Replay verification failed");
   }
 

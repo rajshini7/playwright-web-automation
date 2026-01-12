@@ -1,25 +1,29 @@
-// src/auth/loginrecord.ts
 import { chromium, Page } from "playwright";
 import { LOGIN_SELECTORS } from "../config/selector";
-import path from "path";
-
-// 🔒 Explicit env loading
-require("dotenv").config({
-  path: path.resolve(process.cwd(), ".env"),
-});
 
 export async function loginForRecord(): Promise<Page> {
   const {
-    BASE_URL,
-    LOGIN_USER,
-    LOGIN_PASS,
-    LOGIN_SUCCESS_SELECTOR,
+    RECORD_BASE_URL,
+    RECORD_LOGIN_USER,
+    RECORD_LOGIN_PASS,
+    RECORD_LOGIN_SUCCESS_SELECTOR,
   } = process.env;
 
-  if (!BASE_URL || !LOGIN_USER || !LOGIN_PASS || !LOGIN_SUCCESS_SELECTOR) {
-    console.error("Loaded env:", process.env);
+  if (
+    !RECORD_BASE_URL ||
+    !RECORD_LOGIN_USER ||
+    !RECORD_LOGIN_PASS ||
+    !RECORD_LOGIN_SUCCESS_SELECTOR
+  ) {
+    console.error("Loaded env:", {
+      RECORD_BASE_URL,
+      RECORD_LOGIN_USER,
+      RECORD_LOGIN_PASS,
+      RECORD_LOGIN_SUCCESS_SELECTOR,
+    });
+
     throw new Error(
-      "Missing .env values. Required: BASE_URL, LOGIN_USER, LOGIN_PASS, LOGIN_SUCCESS_SELECTOR"
+      "Missing .env values. Required: RECORD_BASE_URL, RECORD_LOGIN_USER, RECORD_LOGIN_PASS, RECORD_LOGIN_SUCCESS_SELECTOR"
     );
   }
 
@@ -30,11 +34,11 @@ export async function loginForRecord(): Promise<Page> {
   const page = await context.newPage();
 
   console.log("🌐 Navigating to login page...");
-  await page.goto(BASE_URL, { waitUntil: "domcontentloaded" });
+  await page.goto(RECORD_BASE_URL, { waitUntil: "domcontentloaded" });
 
   console.log("✍️ Filling credentials...");
-  await page.fill(LOGIN_SELECTORS.usernameInput, LOGIN_USER);
-  await page.fill(LOGIN_SELECTORS.passwordInput, LOGIN_PASS);
+  await page.fill(LOGIN_SELECTORS.usernameInput, RECORD_LOGIN_USER);
+  await page.fill(LOGIN_SELECTORS.passwordInput, RECORD_LOGIN_PASS);
 
   console.log("🔐 Submitting login...");
   await Promise.all([
@@ -43,7 +47,7 @@ export async function loginForRecord(): Promise<Page> {
   ]);
 
   console.log("🔎 Verifying login success...");
-  await page.waitForSelector(LOGIN_SUCCESS_SELECTOR, {
+  await page.waitForSelector(RECORD_LOGIN_SUCCESS_SELECTOR, {
     timeout: 15000,
     state: "visible",
   });

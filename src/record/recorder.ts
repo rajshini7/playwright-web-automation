@@ -1,198 +1,196 @@
-// src/record/recorder.ts
-
-import path from "path";
-import dotenv from "dotenv";
-dotenv.config({ path: path.resolve(process.cwd(), ".env") });
-
 import fs from "fs";
+import path from "path";
 import { Page, Browser } from "playwright";
-import { loginForRecord } from "../auth/loginrecord";
 
 /* ================= TYPES ================= */
 
-type ContentSnapshot = {
-  title: string;
-  h1: string;
-  firstP: string;
-  metaDescription: string;
+type VisibleItem = {
+  tag: string;
+  text: string;
+  locator: string;
 };
 
-type Step = {
-  selector: string | null;
+type PageRecord = {
+  pageIndex: number;
   url: string;
-  target_href: string;
-  content: ContentSnapshot;
-  timestamp: number;
-  isInitial?: boolean;
+  items: VisibleItem[];
 };
 
-/* ================= PATHS ================= */
+/* ================= PATH ================= */
 
-const OUT_DIR = path.join(process.cwd(), "baseline");
-const OUT_FILE = path.join(OUT_DIR, "steps.json");
-
-function ensureOutDir() {
-  if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
-}
-
-function saveSteps(steps: Step[]) {
-  ensureOutDir();
-  fs.writeFileSync(OUT_FILE, JSON.stringify(steps, null, 2));
-  console.log(`💾 Saved ${steps.length} steps`);
-}
-
-/* ================= CONTENT ================= */
-
-async function extractContent(page: Page): Promise<ContentSnapshot> {
-  await page.waitForLoadState("domcontentloaded");
-  return page.evaluate(() => {
-    const title = document.title || "";
-    const h1 = document.querySelector("h1")?.textContent?.trim() || "";
-    const metaDescription =
-      (document.querySelector('meta[name="description"]') as HTMLMetaElement)
-        ?.content || "";
-
-    let firstP = "";
-    for (const p of Array.from(document.querySelectorAll("p"))) {
-      const txt = p.textContent?.replace(/\s+/g, " ").trim() || "";
-      if (txt.length > 40) {
-        firstP = txt;
-        break;
-      }
-    }
-
-    return { title, h1, firstP, metaDescription };
-  });
-}
+const OUT_FILE = path.join(process.cwd(), "baseline", "steps.json");
 
 /* ================= RECORDER ================= */
 
-export async function startRecorder(page?: Page) {
-  const activePage = page ?? (await loginForRecord());
-  if (!activePage) throw new Error("No page for recorder");
-
-  const browser: Browser = activePage.context().browser()!;
-  const steps: Step[] = [];
+export async function runRecorder(page: Page, browser: Browser) {
+  const pages: PageRecord[] = [];
+  let currentPage: PageRecord | null = null;
+  let pageIndex = 0;
   let finished = false;
 
-  /* ======== SHUTDOWN CONTROLLER ======== */
+  /* ================= FILE ================= */
 
-  let shutdownResolve!: () => void;
-  const shutdownPromise = new Promise<void>((resolve) => {
-    shutdownResolve = resolve;
-  });
-
-  async function finalize(reason: string) {
-    if (finished) return;
-    finished = true;
-
-    console.log(`\n🛑 Recording finished (${reason})`);
-    saveSteps(steps);
-
-    shutdownResolve();
+  function saveAll() {
+    const dir = path.dirname(OUT_FILE);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(OUT_FILE, JSON.stringify(pages, null, 2));
+    console.log(`💾 Saved ${pages.length} pages`);
   }
 
-  /* ======== 🔥 FIX: PAGE CLOSE HANDLER (ONLY CHANGE) ======== */
+  /* ================= PAGE CONTROL ================= */
 
-  activePage.on("close", () => {
-    finalize("browser window closed (page closed)");
-  });
+  function startNewPage(url: string) {
+    currentPage = {
+      pageIndex: pageIndex++,
+      url,
+      items: []
+    };
+    pages.push(currentPage);
+  }
 
-  /* ======== Existing browser listener (unchanged) ======== */
+  function pushItem(item: VisibleItem) {
+    if (!currentPage) return;
 
-  browser.once("disconnected", () => {
-    finalize("browser disconnected");
-  });
+    const key = `${item.locator}|${item.text}`;
+    if (!(currentPage as any)._seen) {
+      (currentPage as any)._seen = new Set<string>();
+    }
+    const seen = (currentPage as any)._seen as Set<string>;
 
-  /* ======== Optional CTRL+C ======== */
+    if (!seen.has(key)) {
+      seen.add(key);
+      currentPage.items.push(item);
+    }
+  }
 
-  process.on("SIGINT", () => finalize("SIGINT"));
+  /* ================= INIT FIRST PAGE ================= */
 
-  /* ======== Binding ======== */
+  startNewPage(page.url());
 
-  await activePage.exposeBinding(
-    "recordClick",
-    async (_src, payload: { href: string; selector: string }) => {
-      const fromUrl = activePage.url();
-      const targetUrl = new URL(payload.href, fromUrl).href;
+  /* ================= BRIDGE ================= */
 
-      await activePage.goto(targetUrl, { waitUntil: "domcontentloaded" });
-
-      const content = await extractContent(activePage);
-
-      steps.push({
-        selector: payload.selector,
-        url: fromUrl,
-        target_href: activePage.url(),
-        content,
-        timestamp: Date.now(),
-      });
-
-      saveSteps(steps);
+  await page.exposeBinding(
+    "__recordVisibleItem",
+    async (_src, item: VisibleItem) => {
+      pushItem(item);
     }
   );
 
-  /* ======== Click listener injection (unchanged) ======== */
+  /* ================= INJECT RECORDER ================= */
 
-  async function inject() {
-    await activePage.evaluate(() => {
-      if ((window as any).__recorderInstalled) return;
-      (window as any).__recorderInstalled = true;
+  async function injectRecorder() {
+    await page.evaluate(() => {
+      function getLocator(el: Element): string {
+        if ((el as HTMLElement).id) {
+          return `#${(el as HTMLElement).id}`;
+        }
+        if (el.getAttribute("data-testid")) {
+          return `[data-testid="${el.getAttribute("data-testid")}"]`;
+        }
 
-      document.addEventListener(
-        "click",
-        (e) => {
-          const el = (e.target as HTMLElement | null)?.closest("a");
-          if (!el) return;
+        const pathParts: string[] = [];
+        let curr: Element | null = el;
 
-          const href = (el as HTMLAnchorElement).href;
-          if (!href) return;
+        while (curr && curr !== document.body) {
+          let selector = curr.tagName.toLowerCase();
+          const parent: HTMLElement | null = curr.parentElement;
 
-          let selector = el.id
-            ? `a#${el.id}`
-            : `a[href="${el.getAttribute("href")}"]`;
+          if (parent) {
+            const siblings = Array.from(parent.children).filter(
+              (c): c is Element => (c as Element).tagName === curr!.tagName
+            );
+            if (siblings.length > 1) {
+              selector += `:nth-of-type(${siblings.indexOf(curr) + 1})`;
+            }
+          }
 
-          (window as any).recordClick({ href, selector });
+          pathParts.unshift(selector);
+          curr = parent;
+        }
+
+        return pathParts.join(" > ");
+      }
+
+      const isVisible = (el: HTMLElement) => {
+        const r = el.getBoundingClientRect();
+        const s = window.getComputedStyle(el);
+        return (
+          r.width > 0 &&
+          r.height > 0 &&
+          s.visibility !== "hidden" &&
+          s.display !== "none" &&
+          s.opacity !== "0"
+        );
+      };
+
+      const emit = (el: HTMLElement) => {
+        if (!isVisible(el)) return;
+        const text = el.innerText?.replace(/\s+/g, " ").trim();
+        if (!text) return;
+
+        (window as any).__recordVisibleItem({
+          tag: el.tagName.toLowerCase(),
+          text,
+          locator: getLocator(el)
+        });
+      };
+
+      const io = new IntersectionObserver(
+        entries => {
+          entries.forEach(e => {
+            if (e.isIntersecting) emit(e.target as HTMLElement);
+          });
         },
-        true
+        { threshold: 0.1 }
       );
+
+      document.querySelectorAll("body *").forEach(el =>
+        io.observe(el as HTMLElement)
+      );
+
+      const mo = new MutationObserver(muts => {
+        muts.forEach(m =>
+          m.addedNodes.forEach(n => {
+            if (n.nodeType === 1) {
+              io.observe(n as HTMLElement);
+              (n as HTMLElement)
+                .querySelectorAll?.("*")
+                .forEach((c: Element) =>
+                  io.observe(c as HTMLElement)
+                );
+            }
+          })
+        );
+      });
+
+      mo.observe(document.body, { childList: true, subtree: true });
     });
   }
 
-  await inject();
-  activePage.on("framenavigated", async (frame) => {
-    if (frame === activePage.mainFrame()) await inject();
+  await injectRecorder();
+
+  /* ================= NAVIGATION ================= */
+
+  page.on("framenavigated", frame => {
+    if (frame === page.mainFrame()) {
+      startNewPage(frame.url());
+      injectRecorder();
+    }
   });
 
-  /* ======== Initial snapshot ======== */
+  /* ================= SHUTDOWN ================= */
 
-  const startUrl = activePage.url();
-  const initialContent = await extractContent(activePage);
+  /* ================= SHUTDOWN ================= */
 
-  steps.push({
-    selector: null,
-    url: startUrl,
-    target_href: startUrl,
-    content: initialContent,
-    timestamp: Date.now(),
-    isInitial: true,
-  });
-
-  saveSteps(steps);
-
-  console.log("🎥 Recorder active — close browser to stop recording");
-
-  /* ======== WAIT FOR CLOSE ======== */
-
-  await shutdownPromise;
+function finalize(reason: string) {
+  if (finished) return;
+  finished = true;
+  console.log(`\n🛑 Recording finished (${reason})`);
+  saveAll();
   process.exit(0);
 }
 
-/* ================= STANDALONE ================= */
+page.on("close", () => finalize("page closed"));
+process.on("SIGINT", () => finalize("SIGINT"));
 
-if (require.main === module) {
-  startRecorder().catch((err) => {
-    console.error("❌ Recorder crashed:", err);
-    process.exit(1);
-  });
 }

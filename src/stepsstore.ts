@@ -1,47 +1,41 @@
 import fs from "fs";
 import path from "path";
-import { Page } from "playwright";
-import { config } from "./config/app.config";
 
-export type Step = {
-  initialUrl: string;
-  targetHref: string;
-  title: string;
-  firstP: string;
+export type ContentSnapshot = {
+  visibleText: string[];
 };
 
-export function saveSteps(steps: Step[]) {
-  const dir = path.dirname(config.stepsFile);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+export class StepsStore {
+  private steps: any;
+  private readonly filePath: string;
 
-  fs.writeFileSync(config.stepsFile, JSON.stringify(steps, null, 2));
-}
+  constructor() {
+    // 🔥 FORCE PROJECT ROOT (NOT CWD GUESSING)
+    const projectRoot = path.resolve(__dirname, "..", "..");
+    const outDir = path.join(projectRoot, "baseline");
+    this.filePath = path.join(outDir, "steps.json");
 
-export function loadSteps(): Step[] {
-  return JSON.parse(fs.readFileSync(config.stepsFile, "utf-8"));
-}
+    console.log("📁 StepsStore path:", this.filePath);
 
-export async function extractContent(page: Page) {
-  await page.waitForLoadState("domcontentloaded");
+    this.steps = fs.existsSync(this.filePath)
+      ? JSON.parse(fs.readFileSync(this.filePath, "utf-8"))
+      : {};
+  }
 
-  return page.evaluate(() => {
-    const title = document.title || "";
+  updateContentSnapshot(snapshot: ContentSnapshot) {
+    this.steps.contentSnapshot = snapshot;
+  }
 
-    const paragraphs = Array.from(document.querySelectorAll("p"));
-    let firstP = "";
-
-    for (const p of paragraphs) {
-      const text = p.textContent?.replace(/\s+/g, " ").trim() || "";
-      if (text.length > 40) {
-        firstP = text;
-        break;
-      }
+  save() {
+    const dir = path.dirname(this.filePath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
     }
 
-    if (!firstP) {
-      firstP = document.body.innerText.replace(/\s+/g, " ").slice(0, 200);
-    }
-
-    return { title, firstP };
-  });
+    fs.writeFileSync(
+      this.filePath,
+      JSON.stringify(this.steps, null, 2),
+      "utf-8"
+    );
+  }
 }
