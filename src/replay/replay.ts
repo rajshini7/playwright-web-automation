@@ -266,11 +266,20 @@ export async function runReplay(): Promise<void> {
 `;
 
   fs.writeFileSync(REPORT_FILE, reportHtml);
-  console.log(`📄 Replay report generated → ${REPORT_FILE}`);
+console.log(`📄 Replay report generated → ${REPORT_FILE}`);
 
-  if (results.some(r => !r.pass)) {
-    throw new Error("❌ Replay verification failed");
-  }
+const browser = page.context().browser();
 
-  console.log("✅ Replay verification passed");
+if (results.some(r => !r.pass)) {
+  if (browser) await browser.close();
+  throw new Error("❌ Replay verification failed");
+}
+
+console.log("✅ Replay verification passed");
+
+if (browser) {
+  await browser.close(); // ✅ THIS WAS MISSING
+}
+
+process.exit(0); // optional but makes CI deterministic
 }
