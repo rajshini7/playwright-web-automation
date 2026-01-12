@@ -8,11 +8,23 @@ type VisibleItem = {
   tag: string;
   text: string;
   locator: string;
+  boundingBox: {
+    top: number;
+    left: number;
+    width: number;
+    height: number;
+  };
+  scrollY: number;
 };
 
 type PageRecord = {
   pageIndex: number;
   url: string;
+  viewport: {
+    width: number;
+    height: number;
+  };
+  maxScrollY: number;
   items: VisibleItem[];
 };
 
@@ -39,12 +51,17 @@ export async function runRecorder(page: Page, browser: Browser) {
 
   /* ================= PAGE CONTROL ================= */
 
-  function startNewPage(url: string) {
+  async function startNewPage(url: string) {
+    const viewport = page.viewportSize() ?? { width: 0, height: 0 };
+
     currentPage = {
       pageIndex: pageIndex++,
       url,
+      viewport,
+      maxScrollY: 0,
       items: []
     };
+
     pages.push(currentPage);
   }
 
@@ -61,11 +78,15 @@ export async function runRecorder(page: Page, browser: Browser) {
       seen.add(key);
       currentPage.items.push(item);
     }
+
+    if (item.scrollY > currentPage.maxScrollY) {
+      currentPage.maxScrollY = item.scrollY;
+    }
   }
 
   /* ================= INIT FIRST PAGE ================= */
 
-  startNewPage(page.url());
+  await startNewPage(page.url());
 
   /* ================= BRIDGE ================= */
 
@@ -128,10 +149,19 @@ export async function runRecorder(page: Page, browser: Browser) {
         const text = el.innerText?.replace(/\s+/g, " ").trim();
         if (!text) return;
 
+        const rect = el.getBoundingClientRect();
+
         (window as any).__recordVisibleItem({
           tag: el.tagName.toLowerCase(),
           text,
-          locator: getLocator(el)
+          locator: getLocator(el),
+          boundingBox: {
+            top: rect.top,
+            left: rect.left,
+            width: rect.width,
+            height: rect.height
+          },
+          scrollY: window.scrollY
         });
       };
 
@@ -171,26 +201,26 @@ export async function runRecorder(page: Page, browser: Browser) {
 
   /* ================= NAVIGATION ================= */
 
-  page.on("framenavigated", frame => {
+  page.on("framenavigated", async frame => {
     if (frame === page.mainFrame()) {
-      startNewPage(frame.url());
+      await startNewPage(frame.url());
       injectRecorder();
     }
   });
 
   /* ================= SHUTDOWN ================= */
 
-  /* ================= SHUTDOWN ================= */
+  function finalize(reason: string) {
+    if (finished) return;
+    finished = true;
+    console.log(`\n🛑 Recording finished (${reason})`);
+    saveAll();
+    process.exit(0);
+  }
 
-function finalize(reason: string) {
-  if (finished) return;
-  finished = true;
-  console.log(`\n🛑 Recording finished (${reason})`);
-  saveAll();
-  process.exit(0);
-}
+  page.on("close", () => finalize("page closed"));
+  browser.once("disconnected", () => finalize("browser disconnected"));
+  process.on("SIGINT", () => finalize("SIGINT"));
 
-page.on("close", () => finalize("page closed"));
-process.on("SIGINT", () => finalize("SIGINT"));
-
+  console.log("🎥 Recorder active — navigate & scroll, close browser to stop");
 }

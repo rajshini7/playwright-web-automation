@@ -11,14 +11,16 @@ import { runRecorder } from "./record/recorder";
 import { runReplay } from "./replay/replay";
 
 async function main() {
-  const mode = process.argv[2];
+  const mode = process.argv[2]; // undefined | "replay"
 
+  /* ================= REPLAY MODE ================= */
   if (mode === "replay") {
     console.log("🔁 Starting REPLAY mode...");
     await runReplay();
     return;
   }
 
+  /* ================= RECORD MODE ================= */
   console.log("🎥 Starting RECORD mode...");
   console.log("🔵 Starting login flow...");
 
