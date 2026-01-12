@@ -45,3 +45,33 @@ PASSWORD
 
 npm ci
 npx playwright install --with-deps
+
+# ================================
+# Runtime Requirements
+# ================================
+
+Node.js >= 18.x
+npm >= 9.x
+
+# ================================
+# Playwright
+# ================================
+
+playwright (installed via npm)
+chromium (installed via playwright)
+
+# ================================
+# CI / Environment
+# ================================
+
+GitHub Actions compatible
+Linux / macOS / Windows supported
+
+# ================================
+# Notes
+# ================================
+
+- This project does NOT use Python runtime code.
+- requirements.txt is informational for CI / onboarding.
+- All executable dependencies are managed via package.json.
+

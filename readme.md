@@ -1,236 +1,177 @@
-Playwright Recorder & Replay Automation Framework
+# 🎥 Playwright Recorder & Replay Framework (TypeScript)
 
- OVERVIEW
+A custom **Playwright-based Recorder & Replay framework** that:
 
-This project is a Playwright-based UI journey recorder and replay framework that allows you to:
-🔹Record real user navigation flows from a browser session
-🔹Persist those steps as structured data (steps.json)
-🔹Replay the exact same journey deterministically
-🔹Verify content stability across runs
-🔹Capture screenshots automatically on failures
-🔹Generate a self-contained HTML replay report
-🔹Run identically in local and CI environments
-🔹Unlike traditional Playwright tests, this framework focuses on record once → replay forever with validation.
+- Records **real, visible UI content**
+- Stores page snapshots in `steps.json`
+- Replays the same flow in **CI**
+- Verifies that **UI content has not changed**
+- Generates a **visual HTML report**
 
- WHY THIS PROJECT
+This is **NOT** Playwright Test.
+This is a **content-verification engine** built on Playwright.
 
-Modern UI automation often fails due to:
+---
 
-🔹Dynamic content
+## 📌 Why This Project Exists
 
-🔹Fragile selectors
+Traditional UI tests:
+- Break on small layout changes
+- Depend on fragile selectors
+- Require test code for every flow
 
-🔹Environment drift
+This framework instead:
+- Records **what users actually see**
+- Replays **real navigation**
+- Compares **content snapshots**, not pixels
+- Works **locally and in CI**
+- Requires **zero test authoring after recording**
 
-🔹Poor debugging visibility in CI
+---
 
-🔹This project solves those problems by:
+## 🧠 Core Concepts
 
-🔹Recording actual user intent
+### 1️⃣ Recorder Mode
+- Logs in using real credentials
+- Injects a DOM observer
+- Captures:
+  - Visible text
+  - Tag name
+  - Stable DOM locator
+  - Bounding box
+  - Scroll position
+- Writes everything to:
+baseline/steps.json
 
-🔹Validating page content, not just navigation
+markdown
+Copy code
 
-🔹Providing visual proof (screenshots) on failures
+### 2️⃣ Replay Mode
+- Logs in headless (CI-safe)
+- Replays recorded URLs
+- Extracts visible content using **exact same logic**
+- Verifies:
+- Element exists
+- Text matches
+- Element is visible
+- Generates:
+replay-report.html
 
-🔹Producing CI-friendly artifacts
+yaml
+Copy code
 
-🔹Allowing safe regression detection without rewriting tests
+---
 
-This makes it ideal for:
+## 🧱 Tech Stack
 
-🔹Smoke journeys
+- **Node.js**
+- **TypeScript**
+- **Playwright (Chromium)**
+- **GitHub Actions (CI)**
 
-🔹Regression validation
+---
 
-🔹CI health checks
+## 📂 Folder Structure
 
-🔹Demo & audit evidence
-
-🧠 CORE CONCEPTS
-1️⃣ Recorder
-
-Runs an interactive browser
-
-Listens to anchor (<a>) clicks
-
-Captures:
-
-Source URL
-
-Target URL
-
-Page title
-
-h1
-
-First meaningful paragraph
-
-Saves everything into baseline/steps.json
-
-2️⃣ Replay Engine
-
-Reads steps.json
-
-Replays each navigation in order
-
-Extracts live content
-
-Compares recorded vs live content
-
-Flags mismatches
-
-3️⃣ Failure Intelligence
-
-On mismatch:
-
-Takes a full-page screenshot
-
-Embeds it directly into the HTML report
-
-CI exits with failure for visibility
-
-4️⃣ Deterministic Reporting
-
-Generates a single HTML replay report
-
-Screenshots are embedded (not external dependencies)
-
-Works offline after download
-
-🧰 TECH STACK
-
-Node.js 20
-
-TypeScript
-
-Playwright
-
-GitHub Actions
-
-HTML + CSS (custom report generation)
-
-📁 FOLDER STRUCTURE
+```txt
 playwright-recorder/
 │
 ├── baseline/
-│   └── steps.json               # Recorded user journey
+│   └── steps.json              # Recorded content snapshots
 │
 ├── src/
 │   ├── auth/
-│   │   ├── loginrecord.ts       # Login logic for recording
-│   │   └── loginreplay.ts       # Login logic for replay
-│   │
-│   ├── config/
-│   │   ├── app.config.ts
-│   │   ├── env.ts
-│   │   └── selectors.ts
+│   │   ├── loginrecord.ts      # Local interactive login
+│   │   └── loginreplay.ts      # CI-safe headless login
 │   │
 │   ├── record/
-│   │   └── recorder.ts          # Recorder engine
+│   │   └── recorder.ts         # DOM observer + content recorder
 │   │
 │   ├── replay/
-│   │   ├── artifacts/
-│   │   │   ├── screenshot.ts    # Failure screenshot logic
-│   │   │   └── replay-artifacts # Screenshots (runtime only)
-│   │   │
-│   │   ├── replay.ts            # Replay engine + report generator
-│   │   └── index.ts
+│   │   ├── replay.ts           # Replay & verification engine
+│   │   └── artifacts/
+│   │       └── screenshot.ts   # Failure screenshots
 │   │
-│   └── utils/
-│       └── email.ts
+│   ├── stepsstore.ts           # Shared types / helpers
+│   └── index.ts                # Entry point (record / replay)
 │
-├── tests/
-│   └── replay.spec.ts           # CI entrypoint
-│
-├── .github/workflows/
-│   └── playwright.yml           # CI pipeline
-│
-├── replay-report.html           # Generated report (artifact)
-├── playwright.config.ts
+├── replay-report.html          # Generated replay report
 ├── package.json
+├── tsconfig.json
 └── README.md
+▶️ How to Run
+🔹 Record Mode (Local)
+Uses .env file.
 
-▶️ HOW TO EXECUTE
-🔹 Record a User Journey
-npx ts-node src/record/recorder.ts
+bash
+Copy code
+npm run record
+What happens:
 
+Browser opens (headed)
 
-Perform clicks manually
+You interact freely
 
-Close the browser to stop recording
+Recorder captures visible content
 
-Output saved to baseline/steps.json
+Close the browser when done
 
-🔹 Replay & Verify (Local)
-npx playwright test tests/replay.spec.ts
+baseline/steps.json is saved
 
+🔹 Replay Mode (Local or CI)
+Uses environment variables, NOT .env.
 
-Requires .env with:
+PowerShell
+powershell
+Copy code
+$env:BASE_URL="https://practicetestautomation.com"
+$env:LOGIN_PATH="/practice-test-login/"
+$env:USERNAME="student"
+$env:PASSWORD="Password123"
 
-BASE_URL=...
-USERNAME=...
-PASSWORD=...
+npm run replay
+Linux / macOS
+bash
+Copy code
+BASE_URL=https://practicetestautomation.com \
+LOGIN_PATH=/practice-test-login/ \
+USERNAME=student \
+PASSWORD=Password123 \
+npm run replay
+📊 Replay Report
+Generated at:
 
-🔹 Replay in CI
+Copy code
+replay-report.html
+Contains:
 
-Triggered automatically on:
+PASS / FAIL per page
 
-Push to development
+Failure reason
 
-Pull requests to development
+Embedded screenshots (base64)
 
-🔁 CI/CD READY
+🤖 CI/CD Ready
+Replay runs fully headless
 
-✅ GitHub Actions pipeline
-✅ Headless execution
-✅ Secrets via GitHub Secrets
-✅ HTML report as downloadable artifact
-✅ Screenshot evidence on failures
-✅ Deterministic exit codes
+No .env dependency
 
-📤 EXPECTED OUTPUT
-✅ On Success
+Secrets managed via GitHub Actions
 
-CI passes
+Deterministic exit (PASS / FAIL)
 
-Replay report generated
+✅ What This Framework Is Good At
+✔ Regression detection
+✔ Content drift detection
+✔ Smoke verification
+✔ CI-safe UI validation
 
-No screenshots included
+❌ What It Does NOT Try To Be
+✘ Pixel-perfect visual testing
+✘ Playwright Test replacement
+✘ Selector-heavy test suite
 
-❌ On Failure
+👤 Created By
+Rajeev S
+Playwright • Automation • CI Systems
 
-CI fails intentionally
-
-Replay report generated
-
-Failure screenshots embedded inline
-
-Artifacts downloadable from GitHub Actions
-
-🌿 BRANCHING STRATEGY
-main
-├── staging
-└── development
-
-🔹 main
-
-Stable, production-ready
-
-Tagged checkpoints (e.g. v1.0-replay-stable)
-
-🔹 staging
-
-Pre-production validation
-
-Final CI verification
-
-🔹 development
-
-Active feature development
-
-Recorder & replay improvements
-
-🏁 CREATED BY
-
-Rajeev
-Automation | Playwright | CI/CD | Systems Thinking
