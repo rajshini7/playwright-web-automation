@@ -424,7 +424,7 @@
           "top": 0,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 984.8875122070312
+          "height": 953.7000122070312
         },
         "scrollY": 0
       },
@@ -436,7 +436,7 @@
           "top": 0,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 912.8875122070312
+          "height": 881.7000122070312
         },
         "scrollY": 0
       },
@@ -664,7 +664,7 @@
           "top": 220.8000030517578,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 692.0875244140625
+          "height": 660.9000244140625
         },
         "scrollY": 0
       },
@@ -676,7 +676,7 @@
           "top": 220.8000030517578,
           "left": 39.525001525878906,
           "width": 1185.75,
-          "height": 692.0875244140625
+          "height": 660.9000244140625
         },
         "scrollY": 0
       },
@@ -688,7 +688,7 @@
           "top": 220.8000030517578,
           "left": 182.40000915527344,
           "width": 900,
-          "height": 632.0875244140625
+          "height": 600.9000244140625
         },
         "scrollY": 0
       },
@@ -700,7 +700,7 @@
           "top": 220.8000030517578,
           "left": 256.5,
           "width": 751.7999877929688,
-          "height": 632.0875244140625
+          "height": 600.9000244140625
         },
         "scrollY": 0
       },
@@ -736,7 +736,7 @@
           "top": 310.8625183105469,
           "left": 256.5,
           "width": 751.7999877929688,
-          "height": 542.0250244140625
+          "height": 510.8374938964844
         },
         "scrollY": 0
       },
@@ -748,7 +748,7 @@
           "top": 339.4624938964844,
           "left": 268.5,
           "width": 727.7999877929688,
-          "height": 111.57500457763672
+          "height": 109.9749984741211
         },
         "scrollY": 0
       },
@@ -760,7 +760,7 @@
           "top": 339.4624938964844,
           "left": 268.5,
           "width": 230.60000610351562,
-          "height": 111.57500457763672
+          "height": 109.9749984741211
         },
         "scrollY": 0
       },
@@ -796,7 +796,7 @@
           "top": 339.4624938964844,
           "left": 535.1000366210938,
           "width": 461.20001220703125,
-          "height": 111.57500457763672
+          "height": 109.9749984741211
         },
         "scrollY": 0
       },
@@ -808,7 +808,7 @@
           "top": 366.4624938964844,
           "left": 535.1000366210938,
           "width": 461.20001220703125,
-          "height": 57.57500076293945
+          "height": 55.97500228881836
         },
         "scrollY": 0
       },
@@ -817,10 +817,10 @@
         "text": "Simple login page where testers can execute positive and negative login test cases",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > p > em",
         "boundingBox": {
-          "top": 370.4624938964844,
+          "top": 368.8625183105469,
           "left": 535.1000366210938,
-          "width": 459.2749938964844,
-          "height": 48.78750228881836
+          "width": 408.82501220703125,
+          "height": 49.587501525878906
         },
         "scrollY": 0
       },
@@ -829,10 +829,10 @@
         "text": "Test Exceptions Page to reproduce the most common Selenium Exceptions.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2)",
         "boundingBox": {
-          "top": 511.13751220703125,
+          "top": 509.5375061035156,
           "left": 268.5,
           "width": 727.7999877929688,
-          "height": 111.57500457763672
+          "height": 81.98750305175781
         },
         "scrollY": 0
       },
@@ -841,10 +841,10 @@
         "text": "Test Exceptions",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
         "boundingBox": {
-          "top": 511.13751220703125,
+          "top": 509.5375061035156,
           "left": 268.5,
           "width": 230.60000610351562,
-          "height": 111.57500457763672
+          "height": 81.98750305175781
         },
         "scrollY": 0
       },
@@ -853,7 +853,7 @@
         "text": "Test Exceptions",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p",
         "boundingBox": {
-          "top": 538.1375122070312,
+          "top": 536.5375366210938,
           "left": 268.5,
           "width": 230.60000610351562,
           "height": 27.98750114440918
@@ -865,7 +865,7 @@
         "text": "Test Exceptions",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p > a",
         "boundingBox": {
-          "top": 540.5375366210938,
+          "top": 538.9375,
           "left": 268.5,
           "width": 122.0875015258789,
           "height": 21.600000381469727
@@ -877,10 +877,10 @@
         "text": "Page to reproduce the most common Selenium Exceptions.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)",
         "boundingBox": {
-          "top": 511.13751220703125,
+          "top": 509.5375061035156,
           "left": 535.1000366210938,
           "width": 461.20001220703125,
-          "height": 111.57500457763672
+          "height": 81.98750305175781
         },
         "scrollY": 0
       },
@@ -889,10 +889,10 @@
         "text": "Page to reproduce the most common Selenium Exceptions.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p",
         "boundingBox": {
-          "top": 538.1375122070312,
+          "top": 536.5375366210938,
           "left": 535.1000366210938,
           "width": 461.20001220703125,
-          "height": 57.57500076293945
+          "height": 27.98750114440918
         },
         "scrollY": 0
       },
@@ -901,10 +901,10 @@
         "text": "Page to reproduce the most common Selenium Exceptions.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p > em",
         "boundingBox": {
-          "top": 542.1375122070312,
+          "top": 538.9375,
           "left": 535.1000366210938,
-          "width": 376.20001220703125,
-          "height": 48.78750228881836
+          "width": 422.5874938964844,
+          "height": 21.600000381469727
         },
         "scrollY": 0
       },
@@ -913,7 +913,7 @@
         "text": "Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3)",
         "boundingBox": {
-          "top": 682.8125,
+          "top": 651.625,
           "left": 268.5,
           "width": 727.7999877929688,
           "height": 109.9749984741211
@@ -925,7 +925,7 @@
         "text": "Test Table",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1)",
         "boundingBox": {
-          "top": 682.8125,
+          "top": 651.625,
           "left": 268.5,
           "width": 230.60000610351562,
           "height": 109.9749984741211
@@ -937,7 +937,7 @@
         "text": "Test Table",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > p",
         "boundingBox": {
-          "top": 709.8125,
+          "top": 678.625,
           "left": 268.5,
           "width": 230.60000610351562,
           "height": 27.98750114440918
@@ -949,7 +949,7 @@
         "text": "Test Table",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > p > a",
         "boundingBox": {
-          "top": 712.2125244140625,
+          "top": 681.0250244140625,
           "left": 268.5,
           "width": 77.76250457763672,
           "height": 21.600000381469727
@@ -961,7 +961,7 @@
         "text": "Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2)",
         "boundingBox": {
-          "top": 682.8125,
+          "top": 651.625,
           "left": 535.1000366210938,
           "width": 461.20001220703125,
           "height": 109.9749984741211
@@ -973,7 +973,7 @@
         "text": "Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > p",
         "boundingBox": {
-          "top": 709.8125,
+          "top": 678.625,
           "left": 535.1000366210938,
           "width": 461.20001220703125,
           "height": 55.97500228881836
@@ -990,7 +990,7 @@
       "width": 1280,
       "height": 720
     },
-    "maxScrollY": 446.3999938964844,
+    "maxScrollY": 288,
     "items": [
       {
         "tag": "div",
@@ -1381,108 +1381,48 @@
         "text": "As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(4)",
         "boundingBox": {
-          "top": 665.0125122070312,
+          "top": 695.4125366210938,
           "left": 268.5,
           "width": 727.7999877929688,
           "height": 139.9375
         },
-        "scrollY": 104.80000305175781
+        "scrollY": 74.4000015258789
       },
       {
         "tag": "p",
         "text": "Beyond Test Automation",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5)",
         "boundingBox": {
-          "top": 705.5499877929688,
+          "top": 716.75,
           "left": 268.5,
           "width": 727.7999877929688,
           "height": 27.98750114440918
         },
-        "scrollY": 231.1999969482422
+        "scrollY": 220
       },
       {
         "tag": "strong",
         "text": "Beyond Test Automation",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5) > strong",
         "boundingBox": {
-          "top": 707.9500122070312,
+          "top": 698.3500366210938,
           "left": 268.5,
           "width": 202.7624969482422,
           "height": 21.600000381469727
         },
-        "scrollY": 231.1999969482422
+        "scrollY": 240.8000030517578
       },
       {
         "tag": "p",
         "text": "Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(6)",
         "boundingBox": {
-          "top": 712.5375366210938,
+          "top": 703.7374877929688,
           "left": 268.5,
           "width": 727.7999877929688,
           "height": 55.97500228881836
         },
-        "scrollY": 279.20001220703125
-      },
-      {
-        "tag": "p",
-        "text": "Courses and Achievements",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7)",
-        "boundingBox": {
-          "top": 710.7125244140625,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 27.98750114440918
-        },
-        "scrollY": 364
-      },
-      {
-        "tag": "strong",
-        "text": "Courses and Achievements",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7) > strong",
-        "boundingBox": {
-          "top": 713.1124877929688,
-          "left": 268.5,
-          "width": 220.5625,
-          "height": 21.600000381469727
-        },
-        "scrollY": 364
-      },
-      {
-        "tag": "p",
-        "text": "In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8)",
-        "boundingBox": {
-          "top": 702.5,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 139.9375
-        },
-        "scrollY": 427.20001220703125
-      },
-      {
-        "tag": "strong",
-        "text": "nine courses with over 70,000 students",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(1)",
-        "boundingBox": {
-          "top": 713.6875,
-          "left": 268.5,
-          "width": 668.5499877929688,
-          "height": 49.587501525878906
-        },
-        "scrollY": 446.3999938964844
-      },
-      {
-        "tag": "a",
-        "text": "nine courses with over 70,000 students",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(1) > a",
-        "boundingBox": {
-          "top": 713.6875,
-          "left": 268.5,
-          "width": 668.5499877929688,
-          "height": 49.587501525878906
-        },
-        "scrollY": 446.3999938964844
+        "scrollY": 288
       }
     ],
     "_seen": {}
