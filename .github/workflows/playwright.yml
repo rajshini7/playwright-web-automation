@@ -1,4 +1,4 @@
-name: Playwright Replay CI (Development)
+name: Playwright run_test CI (Development)
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
       - development
 
 jobs:
-  replay:
-    name: Run Playwright Replay
+  run_test:
+    name: Run Playwright run_test
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -30,7 +30,7 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Run replay automation
+      - name: Run run_test automation
         env:
           CI: true
           BASE_URL: ${{ secrets.BASE_URL }}
@@ -43,12 +43,12 @@ jobs:
           echo "LOGIN_PATH set: $([[ -n \"$LOGIN_PATH\" ]] && echo yes || echo no)"
           echo "USERNAME set: $([[ -n \"$USERNAME\" ]] && echo yes || echo no)"
           echo "PASSWORD set: $([[ -n \"$PASSWORD\" ]] && echo yes || echo no)"
-          npm run replay
+          npm run run_test
 
-      - name: Upload replay report
+      - name: Upload run_test report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: replay-report
-          path: replay-report.html
+          name: run_test-report
+          path: run_test-report.html
           retention-days: 30

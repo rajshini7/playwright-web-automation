@@ -6,25 +6,25 @@ dotenv.config({
   override: true,
 });
 
-import { loginForRecord } from "./auth/loginrecord";
-import { runRecorder } from "./record/recorder";
-import { runReplay } from "./replay/replay";
+import { loginForcreate_test } from "./auth/logincreate_test";
+import { runcreate_tester } from "./create_test/create_tester";
+import { runrun_test } from "./run_test/run_test";
 
 async function main() {
-  const mode = process.argv[2]; // undefined | "replay"
+  const mode = process.argv[2]; // undefined | "run_test"
 
-  /* ================= REPLAY MODE ================= */
-  if (mode === "replay") {
-    console.log("🔁 Starting REPLAY mode...");
-    await runReplay();
+  /* ================= run_test MODE ================= */
+  if (mode === "run_test") {
+    console.log("🔁 Starting run_test mode...");
+    await runrun_test();
     return;
   }
 
-  /* ================= RECORD MODE ================= */
-  console.log("🎥 Starting RECORD mode...");
+  /* ================= create_test MODE ================= */
+  console.log("🎥 Starting create_test mode...");
   console.log("🔵 Starting login flow...");
 
-  const page = await loginForRecord();
+  const page = await loginForcreate_test();
   const browser = page.context().browser();
 
   if (!browser) {
@@ -34,7 +34,7 @@ async function main() {
   console.log("🔵 Login complete. Manual control handed over.");
   console.log("🔵 Scroll freely. Close browser when done.");
 
-  await runRecorder(page, browser);
+  await runcreate_tester(page, browser);
 }
 
 main().catch(err => {

@@ -1,12 +1,12 @@
 // NOTE:
-// Replay intentionally DOES NOT load dotenv.
+// run_test intentionally DOES NOT load dotenv.
 // All variables must come from CI / runtime environment (process.env)
 
 import { Page } from "playwright";
 import fs from "fs";
 import path from "path";
 
-import { loginForReplay } from "../auth/loginreplay";
+import { loginForrun_test } from "../auth/loginrun_test";
 import { captureFailureScreenshot } from "./artifacts/screenshot";
 
 /* ================= TYPES ================= */
@@ -24,7 +24,7 @@ type VisibleItem = {
   scrollY: number;
 };
 
-type PageRecord = {
+type Pagecreate_test = {
   pageIndex: number;
   url: string;
   viewport?: {
@@ -35,7 +35,7 @@ type PageRecord = {
   items: VisibleItem[];
 };
 
-type PageResult = PageRecord & {
+type PageResult = Pagecreate_test & {
   pass: boolean;
   failureReason?: string;
   screenshotPath?: string;
@@ -45,15 +45,15 @@ type PageResult = PageRecord & {
 
 const BASELINE_DIR = path.join(process.cwd(), "baseline");
 const STEPS_FILE = path.join(BASELINE_DIR, "steps.json");
-const REPORT_FILE = path.join(process.cwd(), "replay-report.html");
+const REPORT_FILE = path.join(process.cwd(), "run_test-report.html");
 
 /* ================= HELPERS ================= */
 
-function loadPages(): PageRecord[] {
+function loadPages(): Pagecreate_test[] {
   if (!fs.existsSync(STEPS_FILE)) {
-    throw new Error(`${STEPS_FILE} not found. Run recorder first.`);
+    throw new Error(`${STEPS_FILE} not found. Run create_tester first.`);
   }
-  return JSON.parse(fs.readFileSync(STEPS_FILE, "utf-8")) as PageRecord[];
+  return JSON.parse(fs.readFileSync(STEPS_FILE, "utf-8")) as Pagecreate_test[];
 }
 
 function embedImageBase64(filePath: string): string {
@@ -61,7 +61,7 @@ function embedImageBase64(filePath: string): string {
   return `data:image/png;base64,${buffer.toString("base64")}`;
 }
 
-/* ================= EXACT RECORDER EXTRACTION ================= */
+/* ================= EXACT create_testER EXTRACTION ================= */
 
 async function extractVisibleContent(page: Page): Promise<VisibleItem[]> {
   return await page.evaluate(() => {
@@ -88,7 +88,7 @@ async function extractVisibleContent(page: Page): Promise<VisibleItem[]> {
 
       const rect = element.getBoundingClientRect();
 
-      // EXACT locator strategy used by recorder
+      // EXACT locator strategy used by create_tester
       let locator = "";
       if (element.id) {
         locator = `#${element.id}`;
@@ -136,34 +136,34 @@ async function extractVisibleContent(page: Page): Promise<VisibleItem[]> {
 
 /* ================= ENTRY ================= */
 
-export async function runReplay(): Promise<void> {
+export async function runrun_test(): Promise<void> {
   const pages = loadPages();
   if (!pages.length) {
-    console.log("⚠️ No recorded pages found.");
+    console.log("⚠️ No create_tested pages found.");
     return;
   }
 
   const results: PageResult[] = [];
 
-  console.log("🔑 Starting replay login...");
-  const page = await loginForReplay();
-  console.log("✅ Login successful. Starting replay...");
+  console.log("🔑 Starting run_test login...");
+  const page = await loginForrun_test();
+  console.log("✅ Login successful. Starting run_test...");
 
-  for (const record of pages) {
+  for (const create_test of pages) {
     console.log(
-      `\n▶ Verifying page ${record.pageIndex + 1}: ${record.url}`
+      `\n▶ Verifying page ${create_test.pageIndex + 1}: ${create_test.url}`
     );
 
-    if (record.viewport) {
-      await page.setViewportSize(record.viewport);
+    if (create_test.viewport) {
+      await page.setViewportSize(create_test.viewport);
     }
 
-    await page.goto(record.url, {
+    await page.goto(create_test.url, {
       waitUntil: "load",
       timeout: 60_000,
     });
 
-    await page.evaluate(y => window.scrollTo(0, y), record.maxScrollY);
+    await page.evaluate(y => window.scrollTo(0, y), create_test.maxScrollY);
     await page.waitForTimeout(500);
 
     const liveItems = await extractVisibleContent(page);
@@ -171,7 +171,7 @@ export async function runReplay(): Promise<void> {
     let pass = true;
     let failureReason: string | undefined;
 
-    for (const baselineItem of record.items) {
+    for (const baselineItem of create_test.items) {
       const match = liveItems.find(
         live =>
           live.tag === baselineItem.tag &&
@@ -206,12 +206,12 @@ export async function runReplay(): Promise<void> {
     if (!pass) {
       screenshotPath = await captureFailureScreenshot(
         page,
-        record.pageIndex + 1
+        create_test.pageIndex + 1
       );
     }
 
     results.push({
-      ...record,
+      ...create_test,
       pass,
       failureReason,
       screenshotPath,
@@ -223,7 +223,7 @@ export async function runReplay(): Promise<void> {
   const reportHtml = `
 <html>
 <head>
-  <title>Replay Report</title>
+  <title>run_test Report</title>
   <style>
     body { font-family: sans-serif; padding: 20px; }
     .page { border: 1px solid #ccc; margin-bottom: 20px; padding: 10px; }
@@ -233,7 +233,7 @@ export async function runReplay(): Promise<void> {
   </style>
 </head>
 <body>
-  <h1>Replay Verification Report</h1>
+  <h1>run_test Verification Report</h1>
   ${results
     .map(
       r => `
@@ -266,16 +266,16 @@ export async function runReplay(): Promise<void> {
 `;
 
   fs.writeFileSync(REPORT_FILE, reportHtml);
-console.log(`📄 Replay report generated → ${REPORT_FILE}`);
+console.log(`📄 run_test report generated → ${REPORT_FILE}`);
 
 const browser = page.context().browser();
 
 if (results.some(r => !r.pass)) {
   if (browser) await browser.close();
-  throw new Error("❌ Replay verification failed");
+  throw new Error("❌ run_test verification failed");
 }
 
-console.log("✅ Replay verification passed");
+console.log("✅ run_test verification passed");
 
 if (browser) {
   await browser.close(); // ✅ THIS WAS MISSING

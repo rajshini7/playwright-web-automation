@@ -1,10 +1,10 @@
 {
-  "name": "playwright-recorder",
+  "name": "playwright-create_tester",
   "version": "1.0.0",
   "type": "commonjs",
   "scripts": {
-    "record": "ts-node src/index.ts",
-    "replay": "ts-node src/index.ts replay"
+    "create_test": "ts-node src/index.ts",
+    "run_test": "ts-node src/index.ts run_test"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
