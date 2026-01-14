@@ -846,7 +846,7 @@
       "width": 1280,
       "height": 800
     },
-    "maxScrollY": 116,
+    "maxScrollY": 0,
     "items": [
       {
         "tag": "div",
@@ -1402,7 +1402,7 @@
       },
       {
         "tag": "p",
-        "text": "nd sorting controls.",
+        "text": "Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > p",
         "boundingBox": {
           "top": 678.625,
@@ -1411,54 +1411,6 @@
           "height": 55.97500228881836
         },
         "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "© Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
-        "locator": "div > div > footer > div",
-        "boundingBox": {
-          "top": 773.7000122070312,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 72
-        },
-        "scrollY": 108
-      },
-      {
-        "tag": "span",
-        "text": "© Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
-        "locator": "div > div > footer > div > span",
-        "boundingBox": {
-          "top": 792.1000366210938,
-          "left": 350.3999938964844,
-          "width": 563.9874877929688,
-          "height": 19.200000762939453
-        },
-        "scrollY": 116
-      },
-      {
-        "tag": "a",
-        "text": "Practice Test Automation.",
-        "locator": "div > div > footer > div > span > a:nth-of-type(1)",
-        "boundingBox": {
-          "top": 792.1000366210938,
-          "left": 479.8125,
-          "width": 189.25,
-          "height": 19.200000762939453
-        },
-        "scrollY": 116
-      },
-      {
-        "tag": "a",
-        "text": "Privacy Policy",
-        "locator": "div > div > footer > div > span > a:nth-of-type(2)",
-        "boundingBox": {
-          "top": 792.1000366210938,
-          "left": 810.8250122070312,
-          "width": 103.5625,
-          "height": 19.200000762939453
-        },
-        "scrollY": 116
       }
     ],
     "_seen": {}
@@ -1470,7 +1422,7 @@
       "width": 1280,
       "height": 800
     },
-    "maxScrollY": 407.20001220703125,
+    "maxScrollY": 0,
     "items": [
       {
         "tag": "div",
@@ -1867,150 +1819,6 @@
           "height": 139.9375
         },
         "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Beyond Test Automation",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5)",
-        "boundingBox": {
-          "top": 773.5499877929688,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 27.98750114440918
-        },
-        "scrollY": 163.1999969482422
-      },
-      {
-        "tag": "strong",
-        "text": "Beyond Test Automation",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5) > strong",
-        "boundingBox": {
-          "top": 775.9500122070312,
-          "left": 268.5,
-          "width": 202.7624969482422,
-          "height": 21.600000381469727
-        },
-        "scrollY": 163.1999969482422
-      },
-      {
-        "tag": "p",
-        "text": "Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(6)",
-        "boundingBox": {
-          "top": 702.9375,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 55.97500228881836
-        },
-        "scrollY": 288.79998779296875
-      },
-      {
-        "tag": "p",
-        "text": "Courses and Achievements",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7)",
-        "boundingBox": {
-          "top": 785.9125366210938,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 27.98750114440918
-        },
-        "scrollY": 288.79998779296875
-      },
-      {
-        "tag": "strong",
-        "text": "Courses and Achievements",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7) > strong",
-        "boundingBox": {
-          "top": 788.3125,
-          "left": 268.5,
-          "width": 220.5625,
-          "height": 21.600000381469727
-        },
-        "scrollY": 288.79998779296875
-      },
-      {
-        "tag": "p",
-        "text": "In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8)",
-        "boundingBox": {
-          "top": 767.2999877929688,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 139.9375
-        },
-        "scrollY": 362.3999938964844
-      },
-      {
-        "tag": "strong",
-        "text": "nine courses with over 70,000 students",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(1)",
-        "boundingBox": {
-          "top": 752.8875122070312,
-          "left": 268.5,
-          "width": 668.5499877929688,
-          "height": 49.587501525878906
-        },
-        "scrollY": 407.20001220703125
-      },
-      {
-        "tag": "a",
-        "text": "nine courses with over 70,000 students",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(1) > a",
-        "boundingBox": {
-          "top": 752.8875122070312,
-          "left": 268.5,
-          "width": 668.5499877929688,
-          "height": 49.587501525878906
-        },
-        "scrollY": 407.20001220703125
-      },
-      {
-        "tag": "strong",
-        "text": "BestSeller XPath course",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(2)",
-        "boundingBox": {
-          "top": 780.875,
-          "left": 494.6625061035156,
-          "width": 196.6750030517578,
-          "height": 21.600000381469727
-        },
-        "scrollY": 407.20001220703125
-      },
-      {
-        "tag": "a",
-        "text": "BestSeller XPath course",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(2) > a",
-        "boundingBox": {
-          "top": 780.875,
-          "left": 494.6625061035156,
-          "width": 196.6750030517578,
-          "height": 21.600000381469727
-        },
-        "scrollY": 407.20001220703125
-      },
-      {
-        "tag": "strong",
-        "text": "HighestRated Selenium course",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(3)",
-        "boundingBox": {
-          "top": 780.875,
-          "left": 740.0875244140625,
-          "width": 250.3125,
-          "height": 21.600000381469727
-        },
-        "scrollY": 407.20001220703125
-      },
-      {
-        "tag": "a",
-        "text": "HighestRated Selenium course",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(3) > a",
-        "boundingBox": {
-          "top": 780.875,
-          "left": 740.0875244140625,
-          "width": 250.3125,
-          "height": 21.600000381469727
-        },
-        "scrollY": 407.20001220703125
       }
     ],
     "_seen": {}
