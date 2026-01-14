@@ -409,22 +409,1068 @@
   },
   {
     "pageIndex": 1,
-    "url": "https://practicetestautomation.com/practice/",
+    "url": "https://practicetestautomation.com/courses/",
     "viewport": {
       "width": 1280,
       "height": 800
     },
     "maxScrollY": 0,
-    "items": []
+    "items": [
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "locator": "#overflow-container",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 6704.30029296875
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "locator": "#max-width",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 6632.30029296875
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "header",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#site-header",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 172.8000030517578
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3)",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#mobile-menu-container",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#mobile-menu-container-inner",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary-container",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "nav",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "ul",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary-items",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "HOME",
+        "locator": "#menu-item-43",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 401.6625061035156,
+          "width": 74.80000305175781,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "HOME",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(1) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 401.6625061035156,
+          "width": 74.80000305175781,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "PRACTICE",
+        "locator": "#menu-item-20",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 479.5625,
+          "width": 104.0374984741211,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "PRACTICE",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(2) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 479.5625,
+          "width": 104.0374984741211,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "COURSES",
+        "locator": "#menu-item-21",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 586.7000122070312,
+          "width": 99.3375015258789,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "COURSES",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(3) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 586.7000122070312,
+          "width": 99.3375015258789,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "BLOG",
+        "locator": "#menu-item-19",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 689.1375122070312,
+          "width": 68.375,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "BLOG",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(4) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 689.1375122070312,
+          "width": 68.375,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "CONTACT",
+        "locator": "#menu-item-18",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 760.6124877929688,
+          "width": 102.51250457763672,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(5) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 760.6124877929688,
+          "width": 102.51250457763672,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Courses",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 54.0625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "h1",
+        "text": "Courses",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(1) > h1",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 54.0625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "h2",
+        "text": "Selenium WebDriver: Selenium Automation Testing with Java",
+        "locator": "#selenium-webdriver-with-java-for-beginners",
+        "boundingBox": {
+          "top": 310.8625183105469,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 72
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "Selenium WebDriver: Selenium Automation Testing with Java",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > h2:nth-of-type(1) > a",
+        "boundingBox": {
+          "top": 310.0625,
+          "left": 268.5,
+          "width": 628,
+          "height": 73.5999984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(1)",
+        "boundingBox": {
+          "top": 409.8625183105469,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 55.97500228881836
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(2)",
+        "boundingBox": {
+          "top": 492.8374938964844,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 100.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "strong",
+        "text": "My top-rated, best-selling course",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(2) > strong:nth-of-type(1)",
+        "boundingBox": {
+          "top": 517.7374877929688,
+          "left": 313.5249938964844,
+          "width": 270.3625183105469,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "strong",
+        "text": "fully updated in 2024",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(2) > strong:nth-of-type(2)",
+        "boundingBox": {
+          "top": 517.7374877929688,
+          "left": 600.8500366210938,
+          "width": 173.35000610351562,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "What you’ll learn in this course:",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(3)",
+        "boundingBox": {
+          "top": 620.8125,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "strong",
+        "text": "What you’ll learn in this course:",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(3) > strong",
+        "boundingBox": {
+          "top": 623.2125244140625,
+          "left": 268.5,
+          "width": 257.4750061035156,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "ul",
+        "text": "Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1)",
+        "boundingBox": {
+          "top": 675.7999877929688,
+          "left": 295.5,
+          "width": 673.7999877929688,
+          "height": 279.875
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "Build a complete test automation framework with Selenium WebDriver",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(1)",
+        "boundingBox": {
+          "top": 675.7999877929688,
+          "left": 295.5,
+          "width": 673.7999877929688,
+          "height": 55.97500228881836
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "Write and run your first real browser automation tests",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(2)",
+        "boundingBox": {
+          "top": 731.7750244140625,
+          "left": 295.5,
+          "width": 673.7999877929688,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "Use TestNG for powerful test structure and reporting",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(3)",
+        "boundingBox": {
+          "top": 759.7625122070312,
+          "left": 295.5,
+          "width": 673.7999877929688,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "Run cross-browser tests in Chrome, Firefox, and Edge",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(4)",
+        "boundingBox": {
+          "top": 787.75,
+          "left": 295.5,
+          "width": 673.7999877929688,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      }
+    ],
+    "_seen": {}
   },
   {
     "pageIndex": 2,
+    "url": "https://practicetestautomation.com/practice/",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "maxScrollY": 116,
+    "items": [
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls. © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "locator": "#overflow-container",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 953.7000122070312
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls. © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "locator": "#max-width",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 881.7000122070312
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "header",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#site-header",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 172.8000030517578
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3)",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#mobile-menu-container",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#mobile-menu-container-inner",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary-container",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "nav",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "ul",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary-items",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "HOME",
+        "locator": "#menu-item-43",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 401.6625061035156,
+          "width": 74.80000305175781,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "HOME",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(1) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 401.6625061035156,
+          "width": 74.80000305175781,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "PRACTICE",
+        "locator": "#menu-item-20",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 479.5625,
+          "width": 104.0374984741211,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "PRACTICE",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(2) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 479.5625,
+          "width": 104.0374984741211,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "COURSES",
+        "locator": "#menu-item-21",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 586.7000122070312,
+          "width": 99.3375015258789,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "COURSES",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(3) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 586.7000122070312,
+          "width": 99.3375015258789,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "BLOG",
+        "locator": "#menu-item-19",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 689.1375122070312,
+          "width": 68.375,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "BLOG",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(4) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 689.1375122070312,
+          "width": 68.375,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "CONTACT",
+        "locator": "#menu-item-18",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 760.6124877929688,
+          "width": 102.51250457763672,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(5) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 760.6124877929688,
+          "width": 102.51250457763672,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "section",
+        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "#main-container",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 660.9000244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "#loop-container",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 39.525001525878906,
+          "width": 1185.75,
+          "height": 660.9000244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 182.40000915527344,
+          "width": 900,
+          "height": 600.9000244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "article",
+        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 600.9000244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Practice",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 54.0625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "h1",
+        "text": "Practice",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(1) > h1",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 54.0625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 310.8625183105469,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 510.8374938964844
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Login Page Simple login page where testers can execute positive and negative login test cases",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 339.4624938964844,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Login Page",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 339.4624938964844,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Test Login Page",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p",
+        "boundingBox": {
+          "top": 366.4624938964844,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "Test Login Page",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p > a",
+        "boundingBox": {
+          "top": 368.8625183105469,
+          "left": 268.5,
+          "width": 120.70000457763672,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Simple login page where testers can execute positive and negative login test cases",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 339.4624938964844,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Simple login page where testers can execute positive and negative login test cases",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > p",
+        "boundingBox": {
+          "top": 366.4624938964844,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 55.97500228881836
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "em",
+        "text": "Simple login page where testers can execute positive and negative login test cases",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > p > em",
+        "boundingBox": {
+          "top": 368.8625183105469,
+          "left": 535.1000366210938,
+          "width": 408.82501220703125,
+          "height": 49.587501525878906
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Exceptions Page to reproduce the most common Selenium Exceptions.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 509.5375061035156,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 81.98750305175781
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Exceptions",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 509.5375061035156,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 81.98750305175781
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Test Exceptions",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p",
+        "boundingBox": {
+          "top": 536.5375366210938,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "Test Exceptions",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p > a",
+        "boundingBox": {
+          "top": 538.9375,
+          "left": 268.5,
+          "width": 122.0875015258789,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Page to reproduce the most common Selenium Exceptions.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 509.5375061035156,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 81.98750305175781
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Page to reproduce the most common Selenium Exceptions.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p",
+        "boundingBox": {
+          "top": 536.5375366210938,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "em",
+        "text": "Page to reproduce the most common Selenium Exceptions.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p > em",
+        "boundingBox": {
+          "top": 538.9375,
+          "left": 535.1000366210938,
+          "width": 422.5874938964844,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3)",
+        "boundingBox": {
+          "top": 651.625,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Table",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 651.625,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Test Table",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > p",
+        "boundingBox": {
+          "top": 678.625,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "Test Table",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > p > a",
+        "boundingBox": {
+          "top": 681.0250244140625,
+          "left": 268.5,
+          "width": 77.76250457763672,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 651.625,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "nd sorting controls.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > p",
+        "boundingBox": {
+          "top": 678.625,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 55.97500228881836
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "© Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "locator": "div > div > footer > div",
+        "boundingBox": {
+          "top": 773.7000122070312,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 72
+        },
+        "scrollY": 108
+      },
+      {
+        "tag": "span",
+        "text": "© Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "locator": "div > div > footer > div > span",
+        "boundingBox": {
+          "top": 792.1000366210938,
+          "left": 350.3999938964844,
+          "width": 563.9874877929688,
+          "height": 19.200000762939453
+        },
+        "scrollY": 116
+      },
+      {
+        "tag": "a",
+        "text": "Practice Test Automation.",
+        "locator": "div > div > footer > div > span > a:nth-of-type(1)",
+        "boundingBox": {
+          "top": 792.1000366210938,
+          "left": 479.8125,
+          "width": 189.25,
+          "height": 19.200000762939453
+        },
+        "scrollY": 116
+      },
+      {
+        "tag": "a",
+        "text": "Privacy Policy",
+        "locator": "div > div > footer > div > span > a:nth-of-type(2)",
+        "boundingBox": {
+          "top": 792.1000366210938,
+          "left": 810.8250122070312,
+          "width": 103.5625,
+          "height": 19.200000762939453
+        },
+        "scrollY": 116
+      }
+    ],
+    "_seen": {}
+  },
+  {
+    "pageIndex": 3,
     "url": "https://practicetestautomation.com/",
     "viewport": {
       "width": 1280,
       "height": 800
     },
-    "maxScrollY": 344.79998779296875,
+    "maxScrollY": 407.20001220703125,
     "items": [
       {
         "tag": "div",
@@ -434,7 +1480,7 @@
           "top": 0,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 2242.300048828125
+          "height": 2222
         },
         "scrollY": 0
       },
@@ -446,7 +1492,7 @@
           "top": 0,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 2170.300048828125
+          "height": 2150
         },
         "scrollY": 0
       },
@@ -674,7 +1720,7 @@
           "top": 220.8000030517578,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 1949.5
+          "height": 1929.2000732421875
         },
         "scrollY": 0
       },
@@ -686,7 +1732,7 @@
           "top": 220.8000030517578,
           "left": 39.525001525878906,
           "width": 1185.75,
-          "height": 1949.5
+          "height": 1929.2000732421875
         },
         "scrollY": 0
       },
@@ -698,7 +1744,7 @@
           "top": 220.8000030517578,
           "left": 182.40000915527344,
           "width": 900,
-          "height": 1889.5
+          "height": 1869.2000732421875
         },
         "scrollY": 0
       },
@@ -710,7 +1756,7 @@
           "top": 220.8000030517578,
           "left": 256.5,
           "width": 751.7999877929688,
-          "height": 1889.5
+          "height": 1869.2000732421875
         },
         "scrollY": 0
       },
@@ -746,7 +1792,7 @@
           "top": 310.8625183105469,
           "left": 256.5,
           "width": 751.7999877929688,
-          "height": 1799.4375
+          "height": 1779.1375732421875
         },
         "scrollY": 0
       },
@@ -827,492 +1873,146 @@
         "text": "Beyond Test Automation",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5)",
         "boundingBox": {
-          "top": 771.9500122070312,
+          "top": 773.5499877929688,
           "left": 268.5,
           "width": 727.7999877929688,
           "height": 27.98750114440918
         },
-        "scrollY": 164.8000030517578
+        "scrollY": 163.1999969482422
       },
       {
         "tag": "strong",
         "text": "Beyond Test Automation",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5) > strong",
         "boundingBox": {
-          "top": 774.3500366210938,
+          "top": 775.9500122070312,
           "left": 268.5,
           "width": 202.7624969482422,
           "height": 21.600000381469727
         },
-        "scrollY": 164.8000030517578
+        "scrollY": 163.1999969482422
       },
       {
         "tag": "p",
         "text": "Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(6)",
         "boundingBox": {
-          "top": 779.7374877929688,
+          "top": 702.9375,
           "left": 268.5,
           "width": 727.7999877929688,
           "height": 55.97500228881836
         },
-        "scrollY": 212
+        "scrollY": 288.79998779296875
       },
       {
         "tag": "p",
         "text": "Courses and Achievements",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7)",
         "boundingBox": {
-          "top": 770.7125244140625,
+          "top": 785.9125366210938,
           "left": 268.5,
           "width": 727.7999877929688,
           "height": 27.98750114440918
         },
-        "scrollY": 304
+        "scrollY": 288.79998779296875
       },
       {
         "tag": "strong",
         "text": "Courses and Achievements",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7) > strong",
         "boundingBox": {
-          "top": 773.1124877929688,
+          "top": 788.3125,
           "left": 268.5,
           "width": 220.5625,
           "height": 21.600000381469727
         },
-        "scrollY": 304
+        "scrollY": 288.79998779296875
       },
       {
         "tag": "p",
         "text": "In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8)",
         "boundingBox": {
-          "top": 784.9000244140625,
+          "top": 767.2999877929688,
           "left": 268.5,
           "width": 727.7999877929688,
           "height": 139.9375
         },
-        "scrollY": 344.79998779296875
-      }
-    ],
-    "_seen": {}
-  },
-  {
-    "pageIndex": 3,
-    "url": "https://practicetestautomation.com/blog/",
-    "viewport": {
-      "width": 1280,
-      "height": 800
-    },
-    "maxScrollY": 168,
-    "items": [
-      {
-        "tag": "header",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#site-header",
-        "boundingBox": {
-          "top": 0,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 172.8000030517578
-        },
-        "scrollY": 0
+        "scrollY": 362.3999938964844
       },
       {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "div:nth-of-type(1) > div > header > div:nth-of-type(3)",
+        "tag": "strong",
+        "text": "nine courses with over 70,000 students",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(1)",
         "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#mobile-menu-container",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#mobile-menu-container-inner",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#menu-primary-container",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#menu-primary",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "nav",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "div:nth-of-type(1) > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "ul",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#menu-primary-items",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "HOME",
-        "locator": "#menu-item-43",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 401.6625061035156,
-          "width": 74.80000305175781,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "HOME",
-        "locator": "div:nth-of-type(1) > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(1) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 401.6625061035156,
-          "width": 74.80000305175781,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "PRACTICE",
-        "locator": "#menu-item-20",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 479.5625,
-          "width": 104.0374984741211,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "PRACTICE",
-        "locator": "div:nth-of-type(1) > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(2) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 479.5625,
-          "width": 104.0374984741211,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "COURSES",
-        "locator": "#menu-item-21",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 586.7000122070312,
-          "width": 99.3375015258789,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "COURSES",
-        "locator": "div:nth-of-type(1) > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(3) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 586.7000122070312,
-          "width": 99.3375015258789,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "BLOG",
-        "locator": "#menu-item-19",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 689.1375122070312,
-          "width": 68.375,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "BLOG",
-        "locator": "div:nth-of-type(1) > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(4) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 689.1375122070312,
-          "width": 68.375,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "CONTACT",
-        "locator": "#menu-item-18",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 760.6124877929688,
-          "width": 102.51250457763672,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "CONTACT",
-        "locator": "div:nth-of-type(1) > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(5) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 760.6124877929688,
-          "width": 102.51250457763672,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Unlock Your Future: Selenium WebDriver Career Launcher Part 6 Published by Dmitry Shyshkin on July 22, 2024 Engaging with the Selenium Community and Expanding Your Network Introduction Welcome back to our “Selenium WebDriver Career Launcher” series! In this sixth part, we will explore the invaluable benefits of engaging with the Selenium community and expanding your professional network. Active participation in the test automation community can significantly enhance your career prospects, keep you updated with the latest trends, and connect you with industry leaders. The Importance of Community Engagement Engaging with the test automation community is more than just staying informed; it’s about building connections, sharing knowledge, and growing professionally. By actively participating in forums, following industry leaders, and attending events, you can gain insights, solve problems more efficiently, and establish yourself as a thought leader in the field. Read More Unlock Your Future: Selenium WebDriver Career Launcher Part 6",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1)",
-        "boundingBox": {
-          "top": 220.8000030517578,
-          "left": 182.40000915527344,
-          "width": 900,
-          "height": 1249.4375
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "article",
-        "text": "Unlock Your Future: Selenium WebDriver Career Launcher Part 6 Published by Dmitry Shyshkin on July 22, 2024 Engaging with the Selenium Community and Expanding Your Network Introduction Welcome back to our “Selenium WebDriver Career Launcher” series! In this sixth part, we will explore the invaluable benefits of engaging with the Selenium community and expanding your professional network. Active participation in the test automation community can significantly enhance your career prospects, keep you updated with the latest trends, and connect you with industry leaders. The Importance of Community Engagement Engaging with the test automation community is more than just staying informed; it’s about building connections, sharing knowledge, and growing professionally. By actively participating in forums, following industry leaders, and attending events, you can gain insights, solve problems more efficiently, and establish yourself as a thought leader in the field. Read More Unlock Your Future: Selenium WebDriver Career Launcher Part 6",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article",
-        "boundingBox": {
-          "top": 220.8000030517578,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 1249.4375
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Unlock Your Future: Selenium WebDriver Career Launcher Part 6 Published by Dmitry Shyshkin on July 22, 2024",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(1)",
-        "boundingBox": {
-          "top": 220.8000030517578,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 192.1875
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "h2",
-        "text": "Unlock Your Future: Selenium WebDriver Career Launcher Part 6",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(1) > h2",
-        "boundingBox": {
-          "top": 220.8000030517578,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 162.1875
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "Unlock Your Future: Selenium WebDriver Career Launcher Part 6",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(1) > h2 > a",
-        "boundingBox": {
-          "top": 216.8000030517578,
-          "left": 265.26251220703125,
-          "width": 734.2625122070312,
-          "height": 169.72500610351562
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Published by Dmitry Shyshkin on July 22, 2024",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(1) > div",
-        "boundingBox": {
-          "top": 388.9875183105469,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 24
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "span",
-        "text": "Published by",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(1) > div > span:nth-of-type(1)",
-        "boundingBox": {
-          "top": 391.38751220703125,
-          "left": 473.45001220703125,
-          "width": 83.125,
-          "height": 19.200000762939453
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "span",
-        "text": "on",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(1) > div > span:nth-of-type(2)",
-        "boundingBox": {
-          "top": 391.38751220703125,
-          "left": 678.2625122070312,
-          "width": 16.462499618530273,
-          "height": 19.200000762939453
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Engaging with the Selenium Community and Expanding Your Network Introduction Welcome back to our “Selenium WebDriver Career Launcher” series! In this sixth part, we will explore the invaluable benefits of engaging with the Selenium community and expanding your professional network. Active participation in the test automation community can significantly enhance your career prospects, keep you updated with the latest trends, and connect you with industry leaders. The Importance of Community Engagement Engaging with the test automation community is more than just staying informed; it’s about building connections, sharing knowledge, and growing professionally. By actively participating in forums, following industry leaders, and attending events, you can gain insights, solve problems more efficiently, and establish yourself as a thought leader in the field. Read More Unlock Your Future: Selenium WebDriver Career Launcher Part 6",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(2)",
-        "boundingBox": {
-          "top": 448.9875183105469,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 1021.25
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "h2",
-        "text": "Engaging with the Selenium Community and Expanding Your Network",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(2) > h2",
-        "boundingBox": {
-          "top": 448.9875183105469,
+          "top": 752.8875122070312,
           "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 72
+          "width": 668.5499877929688,
+          "height": 49.587501525878906
         },
-        "scrollY": 0
-      },
-      {
-        "tag": "h3",
-        "text": "Introduction",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(2) > h3:nth-of-type(1)",
-        "boundingBox": {
-          "top": 544.9874877929688,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 27
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Welcome back to our “Selenium WebDriver Career Launcher” series! In this sixth part, we will explore the invaluable benefits of engaging with the Selenium community and expanding your professional network. Active participation in the test automation community can significantly enhance your career prospects, keep you updated with the latest trends, and connect you with industry leaders.",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(2) > p:nth-of-type(1)",
-        "boundingBox": {
-          "top": 598.9874877929688,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 139.9375
-        },
-        "scrollY": 0
+        "scrollY": 407.20001220703125
       },
       {
         "tag": "a",
-        "text": "“Selenium WebDriver Career Launcher”",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(2) > p:nth-of-type(1) > a",
+        "text": "nine courses with over 70,000 students",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(1) > a",
         "boundingBox": {
-          "top": 601.3875122070312,
-          "left": 438.13751220703125,
-          "width": 312.8999938964844,
+          "top": 752.8875122070312,
+          "left": 268.5,
+          "width": 668.5499877929688,
+          "height": 49.587501525878906
+        },
+        "scrollY": 407.20001220703125
+      },
+      {
+        "tag": "strong",
+        "text": "BestSeller XPath course",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(2)",
+        "boundingBox": {
+          "top": 780.875,
+          "left": 494.6625061035156,
+          "width": 196.6750030517578,
           "height": 21.600000381469727
         },
-        "scrollY": 0
+        "scrollY": 407.20001220703125
       },
       {
-        "tag": "h3",
-        "text": "The Importance of Community Engagement",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(2) > h3:nth-of-type(2)",
+        "tag": "a",
+        "text": "BestSeller XPath course",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(2) > a",
         "boundingBox": {
-          "top": 765.9249877929688,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 27
+          "top": 780.875,
+          "left": 494.6625061035156,
+          "width": 196.6750030517578,
+          "height": 21.600000381469727
         },
-        "scrollY": 0
+        "scrollY": 407.20001220703125
       },
       {
-        "tag": "p",
-        "text": "Engaging with the test automation community is more than just staying informed; it’s about building connections, sharing knowledge, and growing professionally. By actively participating in forums, following industry leaders, and attending events, you can gain insights, solve problems more efficiently, and establish yourself as a thought leader in the field.",
-        "locator": "div:nth-of-type(1) > div > section > div > div:nth-of-type(1) > article > div:nth-of-type(2) > p:nth-of-type(2)",
+        "tag": "strong",
+        "text": "HighestRated Selenium course",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(3)",
         "boundingBox": {
-          "top": 768.7250366210938,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 139.9375
+          "top": 780.875,
+          "left": 740.0875244140625,
+          "width": 250.3125,
+          "height": 21.600000381469727
         },
-        "scrollY": 51.20000076293945
+        "scrollY": 407.20001220703125
+      },
+      {
+        "tag": "a",
+        "text": "HighestRated Selenium course",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(8) > strong:nth-of-type(3) > a",
+        "boundingBox": {
+          "top": 780.875,
+          "left": 740.0875244140625,
+          "width": 250.3125,
+          "height": 21.600000381469727
+        },
+        "scrollY": 407.20001220703125
       }
     ],
     "_seen": {}
-  },
-  {
-    "pageIndex": 4,
-    "url": "https://practicetestautomation.com/contact/",
-    "viewport": {
-      "width": 1280,
-      "height": 800
-    },
-    "maxScrollY": 0,
-    "items": []
   }
 ]
