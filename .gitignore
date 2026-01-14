@@ -15,4 +15,8 @@ src/run_test/artifacts/run_test-artifacts/
 run_test-artifacts/
 src/run_test/artifacts/run_test-artifacts/
 
+.env.run_test
+.env
+
+
 

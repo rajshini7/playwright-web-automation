@@ -34,7 +34,7 @@ jobs:
         env:
           CI: true
           BASE_URL: ${{ secrets.BASE_URL }}
-          LOGIN_PATH: /practice-test-login/
+          LOGIN_PATH: ${{ secrets.LOGIN_PATH }}
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
@@ -43,7 +43,8 @@ jobs:
           echo "LOGIN_PATH set: $([[ -n \"$LOGIN_PATH\" ]] && echo yes || echo no)"
           echo "USERNAME set: $([[ -n \"$USERNAME\" ]] && echo yes || echo no)"
           echo "PASSWORD set: $([[ -n \"$PASSWORD\" ]] && echo yes || echo no)"
-          npm run run_test
+
+          npx playwright test tests/run_test.spec.ts
 
       - name: Upload run_test report
         if: always()
