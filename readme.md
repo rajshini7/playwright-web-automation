@@ -206,14 +206,6 @@ This makes CI failures **immediately debuggable**.
 - Smoke verification
 - CI-safe UI validation
 
-## ❌ What It Does NOT Try To Be
-
-- Pixel-perfect visual testing
-- Playwright Test replacement
-- Selector-heavy test suite
-
----
-
 ## 👤 Created By
 
 **Rajeev S**  
