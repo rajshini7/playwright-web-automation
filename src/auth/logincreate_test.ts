@@ -1,31 +1,14 @@
 import { chromium, Page } from "playwright";
 import { LOGIN_SELECTORS } from "../config/selector";
 
+
 export async function loginForcreate_test(): Promise<Page> {
-  const {
-    create_test_BASE_URL,
-    create_test_LOGIN_USER,
-    create_test_LOGIN_PASS,
-    create_test_LOGIN_SUCCESS_SELECTOR,
-  } = process.env;
-
-  if (
-    !create_test_BASE_URL ||
-    !create_test_LOGIN_USER ||
-    !create_test_LOGIN_PASS ||
-    !create_test_LOGIN_SUCCESS_SELECTOR
-  ) {
-    console.error("Loaded env:", {
-      create_test_BASE_URL,
-      create_test_LOGIN_USER,
-      create_test_LOGIN_PASS,
-      create_test_LOGIN_SUCCESS_SELECTOR,
-    });
-
-    throw new Error(
-      "Missing .env values. Required: create_test_BASE_URL, create_test_LOGIN_USER, create_test_LOGIN_PASS, create_test_LOGIN_SUCCESS_SELECTOR"
-    );
-  }
+  // 🔥 HARDCODED VALUES (NO .env)
+  const create_test_BASE_URL =
+    "https://practicetestautomation.com/practice-test-login/";
+  const create_test_LOGIN_USER = "student";
+  const create_test_LOGIN_PASS = "Password123";
+  const create_test_LOGIN_SUCCESS_SELECTOR = "h1";
 
   console.log("🚀 Launching headed browser for create_test");
 

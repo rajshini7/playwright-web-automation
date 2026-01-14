@@ -193,7 +193,15 @@ export async function runcreate_tester(page: Page, browser: Browser) {
         );
       });
 
-      mo.observe(document.body, { childList: true, subtree: true });
+      // 🔧 FIX 1: Guard DOM existence
+      if (!document.body || !(document.body instanceof Node)) return;
+
+      try {
+        // 🔧 FIX 2: Safe observer attach
+        mo.observe(document.body, { childList: true, subtree: true });
+      } catch {
+        // navigation / teardown — ignore
+      }
     });
   }
 
@@ -215,7 +223,7 @@ export async function runcreate_tester(page: Page, browser: Browser) {
     finished = true;
     console.log(`\n🛑 create_testing finished (${reason})`);
     saveAll();
-    process.exit(0);
+    // 🔧 FIX 3: DO NOT process.exit()
   }
 
   page.on("close", () => finalize("page closed"));

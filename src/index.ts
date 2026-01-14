@@ -1,16 +1,30 @@
+import fs from "fs";
 import path from "path";
-import dotenv from "dotenv";
 
-dotenv.config({
-  path: path.resolve(process.cwd(), ".env"),
-  override: true,
-});
+/**
+ * 🔐 HARD LOAD .env (BOM-SAFE, NO DOTENV)
+ * DO NOT CHANGE THIS LOGIC
+ */
+const envPath = path.resolve(process.cwd(), ".env");
+const envFile = fs.readFileSync(envPath, "utf-8");
 
-import { loginForcreate_test } from "./auth/logincreate_test";
-import { runcreate_tester } from "./create_test/create_tester";
-import { runrun_test } from "./run_test/run_test";
+for (const line of envFile.split("\n")) {
+  const trimmed = line.trim();
+  if (!trimmed || trimmed.startsWith("#")) continue;
+
+  let [key, ...rest] = trimmed.split("=");
+
+  // ✅ STRIP UTF-8 BOM (WINDOWS BUG FIX)
+  key = key.replace(/^\uFEFF/, "");
+
+  process.env[key] = rest.join("=");
+}
 
 async function main() {
+  const { loginForcreate_test } = await import("./auth/logincreate_test");
+  const { runcreate_tester } = await import("./create_test/create_tester");
+  const { runrun_test } = await import("./run_test/run_test");
+
   const mode = process.argv[2]; // undefined | "run_test"
 
   /* ================= run_test MODE ================= */
@@ -23,6 +37,14 @@ async function main() {
   /* ================= create_test MODE ================= */
   console.log("🎥 Starting create_test mode...");
   console.log("🔵 Starting login flow...");
+
+  console.log("Loaded env:", {
+    create_test_BASE_URL: process.env.create_test_BASE_URL,
+    create_test_LOGIN_USER: process.env.create_test_LOGIN_USER,
+    create_test_LOGIN_PASS: process.env.create_test_LOGIN_PASS,
+    create_test_LOGIN_SUCCESS_SELECTOR:
+      process.env.create_test_LOGIN_SUCCESS_SELECTOR,
+  });
 
   const page = await loginForcreate_test();
   const browser = page.context().browser();
