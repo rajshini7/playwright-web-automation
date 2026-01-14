@@ -1,64 +1,74 @@
-# 🎥 Playwright create_tester & run_test Framework (TypeScript)
+# 🎥 Playwright create_test & run_test Framework (TypeScript)
 
-A custom **Playwright-based create_tester & run_test framework** that:
+A custom **Playwright-based UI content recording and replay framework** that focuses on **what users actually see**, not fragile selectors or pixel diffs.
 
-- create_tests **real, visible UI content**
-- Stores page snapshots in `steps.json`
-- run_tests the same flow in **CI**
-- Verifies that **UI content has not changed**
-- Generates a **visual HTML report**
+This project provides two clear, separated modes:
 
-This is **NOT** Playwright Test.
-This is a **content-verification engine** built on Playwright.
+- **create_test** → interactively record visible UI content
+- **run_test** → headless replay + verification (CI-safe)
+
+This is **not** Playwright Test in the traditional sense.
+It is a **semantic UI verification engine built on top of Playwright**.
 
 ---
 
-## 📌 Why This Project Exists
+## 🚀 Why This Project Exists
 
-Traditional UI tests:
-- Break on small layout changes
-- Depend on fragile selectors
-- Require test code for every flow
+Traditional UI automation:
+- Breaks on minor DOM or layout changes
+- Requires constant selector maintenance
+- Needs test code for every flow
 
 This framework instead:
-- create_tests **what users actually see**
-- run_tests **real navigation**
-- Compares **content snapshots**, not pixels
-- Works **locally and in CI**
-- Requires **zero test authoring after create_testing**
+- Records **visible content only** (what users actually see)
+- Replays **real navigation paths**
+- Compares **semantic UI content**, not screenshots
+- Works seamlessly **locally and in CI**
+- Requires **zero test authoring after recording**
 
 ---
 
 ## 🧠 Core Concepts
 
-### 1️⃣ create_tester Mode
+### 1️⃣ create_test (Recording Mode)
+
+- Runs **headed** (interactive browser)
 - Logs in using real credentials
 - Injects a DOM observer
-- Captures:
+- Captures for each page:
   - Visible text
   - Tag name
   - Stable DOM locator
   - Bounding box
   - Scroll position
-- Writes everything to:
+- Allows **unlimited manual interaction**
+- Saves results to:
+
+```
 baseline/steps.json
+```
 
-markdown
-Copy code
+You control **when recording ends** by manually closing the browser.
 
-### 2️⃣ run_test Mode
-- Logs in headless (CI-safe)
-- run_tests create_tested URLs
-- Extracts visible content using **exact same logic**
-- Verifies:
-- Element exists
-- Text matches
-- Element is visible
-- Generates:
+---
+
+### 2️⃣ run_test (Replay & Verification Mode)
+
+- Runs **headless by default** (CI-safe)
+- Logs in using environment variables
+- Navigates using `baseline/steps.json`
+- Extracts visible content using **the same logic as create_test**
+- Verifies for every recorded page:
+  - Element exists
+  - Text matches
+  - Element is visible
+- Generates a full HTML report:
+
+```
 run_test-report.html
+```
 
-yaml
-Copy code
+If any regression is detected, the run **fails deterministically**.
 
 ---
 
@@ -67,111 +77,145 @@ Copy code
 - **Node.js**
 - **TypeScript**
 - **Playwright (Chromium)**
-- **GitHub Actions (CI)**
+- **GitHub Actions (CI/CD)**
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
-```txt
-playwright-create_tester/
+```
+playwright-recorder/
 │
 ├── baseline/
-│   └── steps.json              # create_tested content snapshots
+│   └── steps.json                 # Recorded UI content baseline
 │
 ├── src/
 │   ├── auth/
-│   │   ├── logincreate_test.ts      # Local interactive login
-│   │   └── loginrun_test.ts      # CI-safe headless login
+│   │   ├── logincreate_test.ts    # Interactive login (recording)
+│   │   └── loginrun_test.ts       # Headless login (replay / CI)
 │   │
 │   ├── create_test/
-│   │   └── create_tester.ts         # DOM observer + content create_tester
+│   │   └── create_tester.ts       # DOM observer & content recorder
 │   │
 │   ├── run_test/
-│   │   ├── run_test.ts           # run_test & verification engine
+│   │   ├── run_test.ts            # Replay & verification engine
 │   │   └── artifacts/
-│   │       └── screenshot.ts   # Failure screenshots
+│   │       └── screenshot.ts      # Failure screenshots
 │   │
-│   ├── stepsstore.ts           # Shared types / helpers
-│   └── index.ts                # Entry point (create_test / run_test)
+│   └── stepsstore.ts              # Shared types / helpers
 │
-├── run_test-report.html          # Generated run_test report
+├── tests/
+│   ├── create_test.spec.ts        # Recording entrypoint
+│   └── run_test.spec.ts           # Replay entrypoint
+│
+├── playwright.config.ts           # Playwright + env configuration
+├── run_test-report.html           # Generated replay report
 ├── package.json
 ├── tsconfig.json
 └── README.md
-▶️ How to Run
-🔹 create_test Mode (Local)
-Uses .env file.
+```
 
-bash
-Copy code
-npm run create_test
-What happens:
+---
 
-Browser opens (headed)
+## ▶️ How to Run
 
-You interact freely
+### 🔹 create_test (Local Recording)
 
-create_tester captures visible content
+Runs **headed** and allows free manual interaction.
 
-Close the browser when done
+```bash
+npx playwright test tests/create_test.spec.ts --headed
+```
 
-baseline/steps.json is saved
+**What happens:**
 
-🔹 run_test Mode (Local or CI)
-Uses environment variables, NOT .env.
+- Browser opens
+- You navigate freely (no time limits)
+- Visible content is captured continuously
+- Close the browser when finished
+- `baseline/steps.json` is saved
 
-PowerShell
-powershell
-Copy code
-$env:BASE_URL="https://practicetestautomation.com"
-$env:LOGIN_PATH="/practice-test-login/"
-$env:USERNAME="student"
-$env:PASSWORD="Password123"
+---
 
-npm run run_test
-Linux / macOS
-bash
-Copy code
-BASE_URL=https://practicetestautomation.com \
-LOGIN_PATH=/practice-test-login/ \
-USERNAME=student \
-PASSWORD=Password123 \
-npm run run_test
-📊 run_test Report
-Generated at:
+### 🔹 run_test (Local Replay)
 
-Copy code
+Uses environment variables (not `.env`).
+
+Create a local replay env file:
+
+```
+.env.run_test
+```
+
+```env
+BASE_URL=https://practicetestautomation.com
+LOGIN_PATH=/practice-test-login/
+USERNAME=student
+PASSWORD=Password123
+```
+
+Then run:
+
+```bash
+npx playwright test tests/run_test.spec.ts
+```
+
+This runs **headless**, verifies UI content, and generates:
+
+```
 run_test-report.html
-Contains:
+```
 
-PASS / FAIL per page
+---
 
-Failure reason
+## 🤖 CI / CD Ready
 
-Embedded screenshots (base64)
+- run_test executes fully headless
+- No `.env` dependency in CI
+- Secrets injected via pipeline
+- Deterministic PASS / FAIL behavior
+- HTML report uploaded as artifact
 
-🤖 CI/CD Ready
-run_test runs fully headless
+### Required CI Secrets
 
-No .env dependency
+| Name | Description |
+|----|------------|
+| `BASE_URL` | Application base URL |
+| `LOGIN_PATH` | Login route |
+| `USERNAME` | Replay user |
+| `PASSWORD` | Replay password |
 
-Secrets managed via GitHub Actions
+---
 
-Deterministic exit (PASS / FAIL)
+## 📊 run_test Report
 
-✅ What This Framework Is Good At
-✔ Regression detection
-✔ Content drift detection
-✔ Smoke verification
-✔ CI-safe UI validation
+The generated HTML report includes:
 
-❌ What It Does NOT Try To Be
-✘ Pixel-perfect visual testing
-✘ Playwright Test replacement
-✘ Selector-heavy test suite
+- PASS / FAIL per page
+- Failure reason
+- Embedded screenshots (base64)
 
-👤 Created By
-Rajeev S
+This makes CI failures **immediately debuggable**.
+
+---
+
+## ✅ What This Framework Is Good At
+
+- Semantic UI regression detection
+- Content drift detection
+- Smoke verification
+- CI-safe UI validation
+
+## ❌ What It Does NOT Try To Be
+
+- Pixel-perfect visual testing
+- Playwright Test replacement
+- Selector-heavy test suite
+
+---
+
+## 👤 Created By
+
+**Rajeev S**  
 Playwright • Automation • CI Systems
 
