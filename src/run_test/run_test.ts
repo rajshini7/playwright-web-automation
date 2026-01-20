@@ -53,12 +53,25 @@ function loadPages(): Pagecreate_test[] {
   if (!fs.existsSync(STEPS_FILE)) {
     throw new Error(`${STEPS_FILE} not found. Run create_tester first.`);
   }
-  return JSON.parse(fs.readFileSync(STEPS_FILE, "utf-8")) as Pagecreate_test[];
+  return JSON.parse(
+    fs.readFileSync(STEPS_FILE, "utf-8")
+  ) as Pagecreate_test[];
 }
 
 function embedImageBase64(filePath: string): string {
   const buffer = fs.readFileSync(filePath);
   return `data:image/png;base64,${buffer.toString("base64")}`;
+}
+
+function captureSuccessScreenshot(
+  page: Page,
+  pageIndex: number
+): Promise<string> {
+  const dir = path.join(process.cwd(), "test-results", "success");
+  fs.mkdirSync(dir, { recursive: true });
+
+  const filePath = path.join(dir, `page-${pageIndex}-verified.png`);
+  return page.screenshot({ path: filePath }).then(() => filePath);
 }
 
 /* ================= EXACT create_testER EXTRACTION ================= */
@@ -88,7 +101,6 @@ async function extractVisibleContent(page: Page): Promise<VisibleItem[]> {
 
       const rect = element.getBoundingClientRect();
 
-      // EXACT locator strategy used by create_tester
       let locator = "";
       if (element.id) {
         locator = `#${element.id}`;
@@ -138,6 +150,7 @@ async function extractVisibleContent(page: Page): Promise<VisibleItem[]> {
 
 export async function runrun_test(): Promise<void> {
   const pages = loadPages();
+
   if (!pages.length) {
     console.log("⚠️ No create_tested pages found.");
     return;
@@ -163,7 +176,10 @@ export async function runrun_test(): Promise<void> {
       timeout: 60_000,
     });
 
-    await page.evaluate((y: number) => window.scrollTo(0, y), create_test.maxScrollY);
+    await page.evaluate(
+      (y: number) => window.scrollTo(0, y),
+      create_test.maxScrollY
+    );
     await page.waitForTimeout(500);
 
     const liveItems = await extractVisibleContent(page);
@@ -188,7 +204,6 @@ export async function runrun_test(): Promise<void> {
         break;
       }
 
-      // visibility sanity only (not layout precision)
       if (
         match.boundingBox.width <= 0 ||
         match.boundingBox.height <= 0
@@ -203,8 +218,14 @@ export async function runrun_test(): Promise<void> {
     }
 
     let screenshotPath: string | undefined;
+
     if (!pass) {
       screenshotPath = await captureFailureScreenshot(
+        page,
+        create_test.pageIndex + 1
+      );
+    } else {
+      screenshotPath = await captureSuccessScreenshot(
         page,
         create_test.pageIndex + 1
       );
@@ -240,17 +261,16 @@ export async function runrun_test(): Promise<void> {
     <div class="page">
       <h2>
         Page ${r.pageIndex + 1} —
-        ${
-          r.pass
-            ? '<span class="pass">PASS</span>'
-            : '<span class="fail">FAIL</span>'
-        }
+        ${r.pass ? '<span class="pass">PASS</span>' : '<span class="fail">FAIL</span>'}
       </h2>
       <p><strong>URL:</strong> ${r.url}</p>
       ${
-        r.failureReason
-          ? `<p><strong>Reason:</strong> ${r.failureReason}</p>`
-          : ""
+        r.pass
+          ? `<p><strong>Verification:</strong>
+              All baseline elements matched successfully.
+              Visible content, locators, and text values are identical.
+            </p>`
+          : `<p><strong>Reason:</strong> ${r.failureReason}</p>`
       }
       ${
         r.screenshotPath
@@ -266,18 +286,18 @@ export async function runrun_test(): Promise<void> {
 `;
 
   fs.writeFileSync(REPORT_FILE, reportHtml);
-console.log(`📄 run_test report generated → ${REPORT_FILE}`);
+  console.log(`📄 run_test report generated → ${REPORT_FILE}`);
 
-const browser = page.context().browser();
+  const browser = page.context().browser();
 
-if (results.some(r => !r.pass)) {
-  if (browser) await browser.close();
-  throw new Error("❌ run_test verification failed");
-}
+  if (results.some(r => !r.pass)) {
+    if (browser) await browser.close();
+    throw new Error("❌ run_test verification failed");
+  }
 
-console.log("✅ run_test verification passed");
+  console.log("✅ run_test verification passed");
 
-if (browser) {
-  await browser.close();
-}
+  if (browser) {
+    await browser.close();
+  }
 }
