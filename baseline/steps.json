@@ -409,12 +409,588 @@
   },
   {
     "pageIndex": 1,
-    "url": "https://practicetestautomation.com/courses/",
+    "url": "https://practicetestautomation.com/practice/",
     "viewport": {
       "width": 1280,
       "height": 800
     },
     "maxScrollY": 0,
+    "items": [
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls. © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "locator": "#overflow-container",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 984.8875122070312
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls. © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "locator": "#max-width",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 912.8875122070312
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "header",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#site-header",
+        "boundingBox": {
+          "top": 0,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 172.8000030517578
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3)",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#mobile-menu-container",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#mobile-menu-container-inner",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary-container",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "nav",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "ul",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT",
+        "locator": "#menu-primary-items",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 24,
+          "width": 1216.800048828125,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "HOME",
+        "locator": "#menu-item-43",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 401.6625061035156,
+          "width": 74.80000305175781,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "HOME",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(1) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 401.6625061035156,
+          "width": 74.80000305175781,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "PRACTICE",
+        "locator": "#menu-item-20",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 479.5625,
+          "width": 104.0374984741211,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "PRACTICE",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(2) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 479.5625,
+          "width": 104.0374984741211,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "COURSES",
+        "locator": "#menu-item-21",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 586.7000122070312,
+          "width": 99.3375015258789,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "COURSES",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(3) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 586.7000122070312,
+          "width": 99.3375015258789,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "BLOG",
+        "locator": "#menu-item-19",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 689.1375122070312,
+          "width": 68.375,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "BLOG",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(4) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 689.1375122070312,
+          "width": 68.375,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "li",
+        "text": "CONTACT",
+        "locator": "#menu-item-18",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 760.6124877929688,
+          "width": 102.51250457763672,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "CONTACT",
+        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(5) > a",
+        "boundingBox": {
+          "top": 124.80000305175781,
+          "left": 760.6124877929688,
+          "width": 102.51250457763672,
+          "height": 48
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "section",
+        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "#main-container",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 692.0875244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "#loop-container",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 39.525001525878906,
+          "width": 1185.75,
+          "height": 692.0875244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 182.40000915527344,
+          "width": 900,
+          "height": 632.0875244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "article",
+        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 632.0875244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Practice",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 54.0625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "h1",
+        "text": "Practice",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(1) > h1",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 54.0625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 310.8625183105469,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 542.0250244140625
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Login Page Simple login page where testers can execute positive and negative login test cases",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 339.4624938964844,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 111.57500457763672
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Login Page",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 339.4624938964844,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 111.57500457763672
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Test Login Page",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p",
+        "boundingBox": {
+          "top": 366.4624938964844,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "Test Login Page",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p > a",
+        "boundingBox": {
+          "top": 368.8625183105469,
+          "left": 268.5,
+          "width": 120.70000457763672,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Simple login page where testers can execute positive and negative login test cases",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 339.4624938964844,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 111.57500457763672
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Simple login page where testers can execute positive and negative login test cases",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > p",
+        "boundingBox": {
+          "top": 366.4624938964844,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 57.57500076293945
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "em",
+        "text": "Simple login page where testers can execute positive and negative login test cases",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > p > em",
+        "boundingBox": {
+          "top": 370.4624938964844,
+          "left": 535.1000366210938,
+          "width": 459.2749938964844,
+          "height": 48.78750228881836
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Exceptions Page to reproduce the most common Selenium Exceptions.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 511.13751220703125,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 111.57500457763672
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Exceptions",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 511.13751220703125,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 111.57500457763672
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Test Exceptions",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p",
+        "boundingBox": {
+          "top": 538.1375122070312,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "Test Exceptions",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p > a",
+        "boundingBox": {
+          "top": 540.5375366210938,
+          "left": 268.5,
+          "width": 122.0875015258789,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Page to reproduce the most common Selenium Exceptions.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 511.13751220703125,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 111.57500457763672
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Page to reproduce the most common Selenium Exceptions.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p",
+        "boundingBox": {
+          "top": 538.1375122070312,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 57.57500076293945
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "em",
+        "text": "Page to reproduce the most common Selenium Exceptions.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p > em",
+        "boundingBox": {
+          "top": 542.1375122070312,
+          "left": 535.1000366210938,
+          "width": 376.20001220703125,
+          "height": 48.78750228881836
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3)",
+        "boundingBox": {
+          "top": 682.8125,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Test Table",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1)",
+        "boundingBox": {
+          "top": 682.8125,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Test Table",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > p",
+        "boundingBox": {
+          "top": 709.8125,
+          "left": 268.5,
+          "width": 230.60000610351562,
+          "height": 27.98750114440918
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "a",
+        "text": "Test Table",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > p > a",
+        "boundingBox": {
+          "top": 712.2125244140625,
+          "left": 268.5,
+          "width": 77.76250457763672,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 682.8125,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 109.9749984741211
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > p",
+        "boundingBox": {
+          "top": 709.8125,
+          "left": 535.1000366210938,
+          "width": 461.20001220703125,
+          "height": 55.97500228881836
+        },
+        "scrollY": 0
+      }
+    ],
+    "_seen": {}
+  },
+  {
+    "pageIndex": 2,
+    "url": "https://practicetestautomation.com/courses/",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "maxScrollY": 190.39999389648438,
     "items": [
       {
         "tag": "div",
@@ -424,7 +1000,7 @@
           "top": 0,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 6704.30029296875
+          "height": 6700.30029296875
         },
         "scrollY": 0
       },
@@ -436,7 +1012,7 @@
           "top": 0,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 6632.30029296875
+          "height": 6628.30029296875
         },
         "scrollY": 0
       },
@@ -835,606 +1411,140 @@
           "height": 27.98750114440918
         },
         "scrollY": 0
-      }
-    ],
-    "_seen": {}
-  },
-  {
-    "pageIndex": 2,
-    "url": "https://practicetestautomation.com/practice/",
-    "viewport": {
-      "width": 1280,
-      "height": 800
-    },
-    "maxScrollY": 92,
-    "items": [
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls. © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
-        "locator": "#overflow-container",
-        "boundingBox": {
-          "top": 0,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 953.7000122070312
-        },
-        "scrollY": 0
       },
       {
         "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls. © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
-        "locator": "#max-width",
-        "boundingBox": {
-          "top": 0,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 881.7000122070312
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "header",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#site-header",
-        "boundingBox": {
-          "top": 0,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 172.8000030517578
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "div > div > header > div:nth-of-type(3)",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#mobile-menu-container",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#mobile-menu-container-inner",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#menu-primary-container",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#menu-primary",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "nav",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "ul",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT",
-        "locator": "#menu-primary-items",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 24,
-          "width": 1216.800048828125,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "HOME",
-        "locator": "#menu-item-43",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 401.6625061035156,
-          "width": 74.80000305175781,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "HOME",
-        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(1) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 401.6625061035156,
-          "width": 74.80000305175781,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "PRACTICE",
-        "locator": "#menu-item-20",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 479.5625,
-          "width": 104.0374984741211,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "PRACTICE",
-        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(2) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 479.5625,
-          "width": 104.0374984741211,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "COURSES",
-        "locator": "#menu-item-21",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 586.7000122070312,
-          "width": 99.3375015258789,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "COURSES",
-        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(3) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 586.7000122070312,
-          "width": 99.3375015258789,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "BLOG",
-        "locator": "#menu-item-19",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 689.1375122070312,
-          "width": 68.375,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "BLOG",
-        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(4) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 689.1375122070312,
-          "width": 68.375,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "CONTACT",
-        "locator": "#menu-item-18",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 760.6124877929688,
-          "width": 102.51250457763672,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "CONTACT",
-        "locator": "div > div > header > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(2) > div > nav > ul > li:nth-of-type(5) > a",
-        "boundingBox": {
-          "top": 124.80000305175781,
-          "left": 760.6124877929688,
-          "width": 102.51250457763672,
-          "height": 48
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "section",
-        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
-        "locator": "#main-container",
-        "boundingBox": {
-          "top": 220.8000030517578,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 660.9000244140625
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
-        "locator": "#loop-container",
-        "boundingBox": {
-          "top": 220.8000030517578,
-          "left": 39.525001525878906,
-          "width": 1185.75,
-          "height": 660.9000244140625
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "text": "Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
         "locator": "div > div > section > div > div",
         "boundingBox": {
-          "top": 220.8000030517578,
+          "top": 160,
           "left": 182.40000915527344,
           "width": 900,
-          "height": 600.9000244140625
+          "height": 6347.5
         },
-        "scrollY": 0
+        "scrollY": 60.79999923706055
       },
       {
         "tag": "article",
-        "text": "Practice Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
+        "text": "Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
         "locator": "div > div > section > div > div > article",
         "boundingBox": {
-          "top": 220.8000030517578,
+          "top": 160,
           "left": 256.5,
           "width": 751.7999877929688,
-          "height": 600.9000244140625
+          "height": 6347.5
         },
-        "scrollY": 0
+        "scrollY": 60.79999923706055
       },
       {
-        "tag": "div",
-        "text": "Practice",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(1)",
+        "tag": "li",
+        "text": "Debug and fix common Selenium test failures with confidence",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(5)",
         "boundingBox": {
-          "top": 220.8000030517578,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 54.0625
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "h1",
-        "text": "Practice",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(1) > h1",
-        "boundingBox": {
-          "top": 220.8000030517578,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 54.0625
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Test Login Page Simple login page where testers can execute positive and negative login test cases Test Exceptions Page to reproduce the most common Selenium Exceptions. Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2)",
-        "boundingBox": {
-          "top": 310.8625183105469,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 510.8374938964844
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Test Login Page Simple login page where testers can execute positive and negative login test cases",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1)",
-        "boundingBox": {
-          "top": 339.4624938964844,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 109.9749984741211
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Test Login Page",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
-        "boundingBox": {
-          "top": 339.4624938964844,
-          "left": 268.5,
-          "width": 230.60000610351562,
-          "height": 109.9749984741211
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Test Login Page",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p",
-        "boundingBox": {
-          "top": 366.4624938964844,
-          "left": 268.5,
-          "width": 230.60000610351562,
-          "height": 27.98750114440918
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "Test Login Page",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p > a",
-        "boundingBox": {
-          "top": 368.8625183105469,
-          "left": 268.5,
-          "width": 120.70000457763672,
-          "height": 21.600000381469727
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Simple login page where testers can execute positive and negative login test cases",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
-        "boundingBox": {
-          "top": 339.4624938964844,
-          "left": 535.1000366210938,
-          "width": 461.20001220703125,
-          "height": 109.9749984741211
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Simple login page where testers can execute positive and negative login test cases",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > p",
-        "boundingBox": {
-          "top": 366.4624938964844,
-          "left": 535.1000366210938,
-          "width": 461.20001220703125,
+          "top": 754.9375,
+          "left": 295.5,
+          "width": 673.7999877929688,
           "height": 55.97500228881836
         },
-        "scrollY": 0
+        "scrollY": 60.79999923706055
       },
       {
-        "tag": "em",
-        "text": "Simple login page where testers can execute positive and negative login test cases",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > p > em",
+        "tag": "section",
+        "text": "Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
+        "locator": "#main-container",
         "boundingBox": {
-          "top": 368.8625183105469,
-          "left": 535.1000366210938,
-          "width": 408.82501220703125,
-          "height": 49.587501525878906
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Test Exceptions Page to reproduce the most common Selenium Exceptions.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2)",
-        "boundingBox": {
-          "top": 509.5375061035156,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 81.98750305175781
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Test Exceptions",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
-        "boundingBox": {
-          "top": 509.5375061035156,
-          "left": 268.5,
-          "width": 230.60000610351562,
-          "height": 81.98750305175781
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Test Exceptions",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p",
-        "boundingBox": {
-          "top": 536.5375366210938,
-          "left": 268.5,
-          "width": 230.60000610351562,
-          "height": 27.98750114440918
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "Test Exceptions",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p > a",
-        "boundingBox": {
-          "top": 538.9375,
-          "left": 268.5,
-          "width": 122.0875015258789,
-          "height": 21.600000381469727
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Page to reproduce the most common Selenium Exceptions.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)",
-        "boundingBox": {
-          "top": 509.5375061035156,
-          "left": 535.1000366210938,
-          "width": 461.20001220703125,
-          "height": 81.98750305175781
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Page to reproduce the most common Selenium Exceptions.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p",
-        "boundingBox": {
-          "top": 536.5375366210938,
-          "left": 535.1000366210938,
-          "width": 461.20001220703125,
-          "height": 27.98750114440918
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "em",
-        "text": "Page to reproduce the most common Selenium Exceptions.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p > em",
-        "boundingBox": {
-          "top": 538.9375,
-          "left": 535.1000366210938,
-          "width": 422.5874938964844,
-          "height": 21.600000381469727
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Test Table Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3)",
-        "boundingBox": {
-          "top": 651.625,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 109.9749984741211
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Test Table",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1)",
-        "boundingBox": {
-          "top": 651.625,
-          "left": 268.5,
-          "width": 230.60000610351562,
-          "height": 109.9749984741211
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Test Table",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > p",
-        "boundingBox": {
-          "top": 678.625,
-          "left": 268.5,
-          "width": 230.60000610351562,
-          "height": 27.98750114440918
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "Test Table",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > p > a",
-        "boundingBox": {
-          "top": 681.0250244140625,
-          "left": 268.5,
-          "width": 77.76250457763672,
-          "height": 21.600000381469727
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2)",
-        "boundingBox": {
-          "top": 651.625,
-          "left": 535.1000366210938,
-          "width": 461.20001220703125,
-          "height": 109.9749984741211
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Page to practice UI interactions and data validation with dynamic tables, filters, and sorting controls.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > p",
-        "boundingBox": {
-          "top": 678.625,
-          "left": 535.1000366210938,
-          "width": 461.20001220703125,
-          "height": 55.97500228881836
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "div",
-        "text": "© Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
-        "locator": "div > div > footer > div",
-        "boundingBox": {
-          "top": 789.7000122070312,
+          "top": 138.40000915527344,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 72
+          "height": 6407.5
         },
-        "scrollY": 92
+        "scrollY": 82.4000015258789
+      },
+      {
+        "tag": "div",
+        "text": "Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
+        "locator": "#loop-container",
+        "boundingBox": {
+          "top": 138.40000915527344,
+          "left": 39.525001525878906,
+          "width": 1185.75,
+          "height": 6407.5
+        },
+        "scrollY": 82.4000015258789
+      },
+      {
+        "tag": "li",
+        "text": "Learn Java programming essentials tailored for test automation",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(6)",
+        "boundingBox": {
+          "top": 789.3125,
+          "left": 295.5,
+          "width": 673.7999877929688,
+          "height": 55.97500228881836
+        },
+        "scrollY": 82.4000015258789
+      },
+      {
+        "tag": "div",
+        "text": "Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 174.0625,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 6257.4375
+        },
+        "scrollY": 136.8000030517578
+      },
+      {
+        "tag": "li",
+        "text": "Prepare for interviews and build your job-ready portfolio",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(7)",
+        "boundingBox": {
+          "top": 790.8875122070312,
+          "left": 295.5,
+          "width": 673.7999877929688,
+          "height": 27.98750114440918
+        },
+        "scrollY": 136.8000030517578
+      },
+      {
+        "tag": "div",
+        "text": "Enroll in this course on Udemy",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2)",
+        "boundingBox": {
+          "top": 792.2750244140625,
+          "left": 268.5,
+          "width": 475.8000183105469,
+          "height": 62.48749923706055
+        },
+        "scrollY": 190.39999389648438
+      },
+      {
+        "tag": "div",
+        "text": "Enroll in this course on Udemy",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div",
+        "boundingBox": {
+          "top": 792.2750244140625,
+          "left": 343.9125061035156,
+          "width": 324.9750061035156,
+          "height": 62.48749923706055
+        },
+        "scrollY": 190.39999389648438
+      },
+      {
+        "tag": "a",
+        "text": "Enroll in this course on Udemy",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div > a",
+        "boundingBox": {
+          "top": 792.2750244140625,
+          "left": 343.9125061035156,
+          "width": 324.9750061035156,
+          "height": 62.48749923706055
+        },
+        "scrollY": 190.39999389648438
       }
     ],
     "_seen": {}
-  },
-  {
-    "pageIndex": 3,
-    "url": "https://practicetestautomation.com/practice-test-table/",
-    "viewport": {
-      "width": 1280,
-      "height": 800
-    },
-    "maxScrollY": 0,
-    "items": []
   }
 ]
