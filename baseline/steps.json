@@ -886,7 +886,7 @@
       },
       {
         "tag": "p",
-        "text": "Page toost common Selenium Exceptions.",
+        "text": "Page to reproduce the most common Selenium Exceptions.",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p",
         "boundingBox": {
           "top": 538.1375122070312,
@@ -985,34 +985,34 @@
   },
   {
     "pageIndex": 2,
-    "url": "https://practicetestautomation.com/courses/",
+    "url": "https://practicetestautomation.com/",
     "viewport": {
       "width": 1280,
       "height": 800
     },
-    "maxScrollY": 190.39999389648438,
+    "maxScrollY": 280.79998779296875,
     "items": [
       {
         "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT Hello Welcome to Practice Test Automation! I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings. Experience and Expertise As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation. Beyond Test Automation Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you. Courses and Achievements In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey. A Resourceful Website This website was carefully crafted to host a diverse selection of articles, standalone lectures, tips, and examples for those interested in test automation. Moreover, with a practical platform already established, test automation beginners can easily put their skills into practice. Looking Ahead As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board! Explore and Learn Please be sure to visit our BLOG for engaging articles, speeches, and tutorials, and don’t miss our COURSES, designed to enrich your learning experience. Get a FREE XPath cheat sheet by Signing Up for our newsletter We don’t spam! Read more in our privacy policy © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
         "locator": "#overflow-container",
         "boundingBox": {
           "top": 0,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 6700.30029296875
+          "height": 2242.300048828125
         },
         "scrollY": 0
       },
       {
         "tag": "div",
-        "text": "HOME PRACTICE COURSES BLOG CONTACT Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
+        "text": "HOME PRACTICE COURSES BLOG CONTACT Hello Welcome to Practice Test Automation! I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings. Experience and Expertise As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation. Beyond Test Automation Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you. Courses and Achievements In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey. A Resourceful Website This website was carefully crafted to host a diverse selection of articles, standalone lectures, tips, and examples for those interested in test automation. Moreover, with a practical platform already established, test automation beginners can easily put their skills into practice. Looking Ahead As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board! Explore and Learn Please be sure to visit our BLOG for engaging articles, speeches, and tutorials, and don’t miss our COURSES, designed to enrich your learning experience. Get a FREE XPath cheat sheet by Signing Up for our newsletter We don’t spam! Read more in our privacy policy © Copyright 2020 Practice Test Automation. All rights reserved | Privacy Policy",
         "locator": "#max-width",
         "boundingBox": {
           "top": 0,
           "left": 0,
           "width": 1264.800048828125,
-          "height": 6628.30029296875
+          "height": 2170.300048828125
         },
         "scrollY": 0
       },
@@ -1233,8 +1233,56 @@
         "scrollY": 0
       },
       {
+        "tag": "section",
+        "text": "Hello Welcome to Practice Test Automation! I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings. Experience and Expertise As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation. Beyond Test Automation Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you. Courses and Achievements In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey. A Resourceful Website This website was carefully crafted to host a diverse selection of articles, standalone lectures, tips, and examples for those interested in test automation. Moreover, with a practical platform already established, test automation beginners can easily put their skills into practice. Looking Ahead As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board! Explore and Learn Please be sure to visit our BLOG for engaging articles, speeches, and tutorials, and don’t miss our COURSES, designed to enrich your learning experience. Get a FREE XPath cheat sheet by Signing Up for our newsletter We don’t spam! Read more in our privacy policy",
+        "locator": "#main-container",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 0,
+          "width": 1264.800048828125,
+          "height": 1949.5
+        },
+        "scrollY": 0
+      },
+      {
         "tag": "div",
-        "text": "Courses",
+        "text": "Hello Welcome to Practice Test Automation! I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings. Experience and Expertise As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation. Beyond Test Automation Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you. Courses and Achievements In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey. A Resourceful Website This website was carefully crafted to host a diverse selection of articles, standalone lectures, tips, and examples for those interested in test automation. Moreover, with a practical platform already established, test automation beginners can easily put their skills into practice. Looking Ahead As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board! Explore and Learn Please be sure to visit our BLOG for engaging articles, speeches, and tutorials, and don’t miss our COURSES, designed to enrich your learning experience. Get a FREE XPath cheat sheet by Signing Up for our newsletter We don’t spam! Read more in our privacy policy",
+        "locator": "#loop-container",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 39.525001525878906,
+          "width": 1185.75,
+          "height": 1949.5
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Hello Welcome to Practice Test Automation! I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings. Experience and Expertise As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation. Beyond Test Automation Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you. Courses and Achievements In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey. A Resourceful Website This website was carefully crafted to host a diverse selection of articles, standalone lectures, tips, and examples for those interested in test automation. Moreover, with a practical platform already established, test automation beginners can easily put their skills into practice. Looking Ahead As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board! Explore and Learn Please be sure to visit our BLOG for engaging articles, speeches, and tutorials, and don’t miss our COURSES, designed to enrich your learning experience. Get a FREE XPath cheat sheet by Signing Up for our newsletter We don’t spam! Read more in our privacy policy",
+        "locator": "div > div > section > div > div",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 182.40000915527344,
+          "width": 900,
+          "height": 1889.5
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "article",
+        "text": "Hello Welcome to Practice Test Automation! I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings. Experience and Expertise As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation. Beyond Test Automation Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you. Courses and Achievements In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey. A Resourceful Website This website was carefully crafted to host a diverse selection of articles, standalone lectures, tips, and examples for those interested in test automation. Moreover, with a practical platform already established, test automation beginners can easily put their skills into practice. Looking Ahead As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board! Explore and Learn Please be sure to visit our BLOG for engaging articles, speeches, and tutorials, and don’t miss our COURSES, designed to enrich your learning experience. Get a FREE XPath cheat sheet by Signing Up for our newsletter We don’t spam! Read more in our privacy policy",
+        "locator": "div > div > section > div > div > article",
+        "boundingBox": {
+          "top": 220.8000030517578,
+          "left": 256.5,
+          "width": 751.7999877929688,
+          "height": 1889.5
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "div",
+        "text": "Hello",
         "locator": "div > div > section > div > div > article > div:nth-of-type(1)",
         "boundingBox": {
           "top": 220.8000030517578,
@@ -1246,7 +1294,7 @@
       },
       {
         "tag": "h1",
-        "text": "Courses",
+        "text": "Hello",
         "locator": "div > div > section > div > div > article > div:nth-of-type(1) > h1",
         "boundingBox": {
           "top": 220.8000030517578,
@@ -1257,292 +1305,148 @@
         "scrollY": 0
       },
       {
-        "tag": "h2",
-        "text": "Selenium WebDriver: Selenium Automation Testing with Java",
-        "locator": "#selenium-webdriver-with-java-for-beginners",
-        "boundingBox": {
-          "top": 310.8625183105469,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 72
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "a",
-        "text": "Selenium WebDriver: Selenium Automation Testing with Java",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > h2:nth-of-type(1) > a",
-        "boundingBox": {
-          "top": 310.0625,
-          "left": 268.5,
-          "width": 628,
-          "height": 73.5999984741211
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests.",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(1)",
-        "boundingBox": {
-          "top": 409.8625183105469,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 55.97500228881836
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(2)",
-        "boundingBox": {
-          "top": 492.8374938964844,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 100.9749984741211
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "strong",
-        "text": "My top-rated, best-selling course",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(2) > strong:nth-of-type(1)",
-        "boundingBox": {
-          "top": 517.7374877929688,
-          "left": 313.5249938964844,
-          "width": 270.3625183105469,
-          "height": 21.600000381469727
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "strong",
-        "text": "fully updated in 2024",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(2) > strong:nth-of-type(2)",
-        "boundingBox": {
-          "top": 517.7374877929688,
-          "left": 600.8500366210938,
-          "width": 173.35000610351562,
-          "height": 21.600000381469727
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "p",
-        "text": "What you’ll learn in this course:",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(3)",
-        "boundingBox": {
-          "top": 620.8125,
-          "left": 268.5,
-          "width": 727.7999877929688,
-          "height": 27.98750114440918
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "strong",
-        "text": "What you’ll learn in this course:",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(3) > strong",
-        "boundingBox": {
-          "top": 623.2125244140625,
-          "left": 268.5,
-          "width": 257.4750061035156,
-          "height": 21.600000381469727
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "ul",
-        "text": "Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1)",
-        "boundingBox": {
-          "top": 675.7999877929688,
-          "left": 295.5,
-          "width": 673.7999877929688,
-          "height": 279.875
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "Build a complete test automation framework with Selenium WebDriver",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(1)",
-        "boundingBox": {
-          "top": 675.7999877929688,
-          "left": 295.5,
-          "width": 673.7999877929688,
-          "height": 55.97500228881836
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "Write and run your first real browser automation tests",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(2)",
-        "boundingBox": {
-          "top": 731.7750244140625,
-          "left": 295.5,
-          "width": 673.7999877929688,
-          "height": 27.98750114440918
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "Use TestNG for powerful test structure and reporting",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(3)",
-        "boundingBox": {
-          "top": 759.7625122070312,
-          "left": 295.5,
-          "width": 673.7999877929688,
-          "height": 27.98750114440918
-        },
-        "scrollY": 0
-      },
-      {
-        "tag": "li",
-        "text": "Run cross-browser tests in Chrome, Firefox, and Edge",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(4)",
-        "boundingBox": {
-          "top": 787.75,
-          "left": 295.5,
-          "width": 673.7999877929688,
-          "height": 27.98750114440918
-        },
-        "scrollY": 0
-      },
-      {
         "tag": "div",
-        "text": "Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
-        "locator": "div > div > section > div > div",
-        "boundingBox": {
-          "top": 160,
-          "left": 182.40000915527344,
-          "width": 900,
-          "height": 6347.5
-        },
-        "scrollY": 60.79999923706055
-      },
-      {
-        "tag": "article",
-        "text": "Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
-        "locator": "div > div > section > div > div > article",
-        "boundingBox": {
-          "top": 160,
-          "left": 256.5,
-          "width": 751.7999877929688,
-          "height": 6347.5
-        },
-        "scrollY": 60.79999923706055
-      },
-      {
-        "tag": "li",
-        "text": "Debug and fix common Selenium test failures with confidence",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(5)",
-        "boundingBox": {
-          "top": 754.9375,
-          "left": 295.5,
-          "width": 673.7999877929688,
-          "height": 55.97500228881836
-        },
-        "scrollY": 60.79999923706055
-      },
-      {
-        "tag": "section",
-        "text": "Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
-        "locator": "#main-container",
-        "boundingBox": {
-          "top": 138.40000915527344,
-          "left": 0,
-          "width": 1264.800048828125,
-          "height": 6407.5
-        },
-        "scrollY": 82.4000015258789
-      },
-      {
-        "tag": "div",
-        "text": "Courses Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
-        "locator": "#loop-container",
-        "boundingBox": {
-          "top": 138.40000915527344,
-          "left": 39.525001525878906,
-          "width": 1185.75,
-          "height": 6407.5
-        },
-        "scrollY": 82.4000015258789
-      },
-      {
-        "tag": "li",
-        "text": "Learn Java programming essentials tailored for test automation",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(6)",
-        "boundingBox": {
-          "top": 789.3125,
-          "left": 295.5,
-          "width": 673.7999877929688,
-          "height": 55.97500228881836
-        },
-        "scrollY": 82.4000015258789
-      },
-      {
-        "tag": "div",
-        "text": "Selenium WebDriver: Selenium Automation Testing with Java Learn Selenium WebDriver with Java and TestNG from scratch. Perfect for manual testers and complete beginners ready to start automating real-world tests. My top-rated, best-selling course – fully updated in 2024 for faster learning and career growth What you’ll learn in this course: Build a complete test automation framework with Selenium WebDriver Write and run your first real browser automation tests Use TestNG for powerful test structure and reporting Run cross-browser tests in Chrome, Firefox, and Edge Debug and fix common Selenium test failures with confidence Learn Java programming essentials tailored for test automation Prepare for interviews and build your job-ready portfolio Enroll in this course on Udemy Selenium WebDriver: Selenium Automation Testing with Python Learn Selenium WebDriver with Python and PyTest from scratch. This hands-on course is perfect for manual testers and anyone new to automation. Top-rated, easy-to-follow course updated in 2024 – start automating real browser tests fast What you’ll learn in this course: Set up test automation framework with Selenium WebDriver Automate your first Selenium WebDriver test Automate software tests using Python and PyTest Execute tests in Chrome, Firefox, and other browsers Recognize test failures and exceptions, and fix them Use PyTest for better test structure and maintenance Enroll in this course on Udemy Java for Testers Start your test automation career by learning Java from this specifically designed for beginners course. All Java you need to start learning test automation In this course you will learn: Starting from the scratch, installing Java and IDEs Creating a first project Learning basic things, data types Learning methods, classes, different functions Principles of Object Oriented Programimg Advanced Java functions Working with files Test frameworks Enroll in this course on Udemy Python: The Complete Guide for Software Testers Master Python for Testing: Automate Tests, Handle Exceptions, Explore OOP, and Dive into Python Libraries. Dive Deep Into Python for Professional Software Testing In this course you will learn: Master the basics and advanced concepts of Python programming. Gain a deep understanding of Python’s data types, structures, and control structures. Learn Object-Oriented Programming (OOP) in Python and apply OOP concepts like inheritance, encapsulation, and polymorphism. Acquire skills for software testing in Python, including unit testing with PyTest, and handling exceptions & errors. Enroll in this course on Udemy Advanced Selenium WebDriver with Java and TestNG A real-world example of Advanced Selenium WebDriver test automation framework with Java and TestNG This course will make you a Selenium Pro In this course you will learn: Develop Full-Stack Test Automation Framework from scratch Implement Data-Driven Test Framework Use Page Object Model Automate almost any test case Use advanced Selenium WebDriver techniques (Taking screenshots, capturing JS console errors, etc) Enroll in this course on Udemy XPath locators for Selenium Build complex XPath locators for Selenium automation that will work on any web element Bestseller course in the Selenium Testing Framework category The XPath is the most complicated method of identifying elements. It can find the location of any element on a web page, even those without class, name, or id attributes. XPath produces reliable locators if used correctly. In this course you will learn: Build complex XPath locators Locate ANY element on the page with XPath Automate testing of any element on the web page Enroll in this course on Udemy REST Assured. API test automation for beginners Rest API test automation from scratch. Create a cool REST Assured framework with Java and TestNG Highest Rated course in the REST Assured category In this course you will learn: How to start REST API Automation using REST Assured Creating REST API testing framework from scratch with Maven and TestNG Use JsonPath and XmlPath Serialize and De-Serialize POJOs Work with Headers and Cookies Use Basic Authentication Enroll in this course on Udemy Advanced Selenium Grid and Cloud Advanced Selenium WebDriver test automation framework with Selenium Grid, Cloud and continuous test execution in Jenkins Become SDET or even Test Automation Architect by learning Selenium Grid! In this course you will learn: Setting up Selenium Grid Running tests on Selenium Grid Advantages and disadvantages of Selenium Grid Test Automation cloud providers Running tests in the cloud Running tests on SauceLabs Jenkins and continuous test execution Enroll in this course on Udemy Advanced Selenium testing framework with Java Selenium WebDriver with Java, TestNG, and Maven. Learn Selenium Testing Framework with Java and TestNG Quick-paced course for test automation engineers that want to improve their framework-building skills In this course you will learn: Build test framework in Selenium WebDriver from scratch using Java and TestNG Create reliable, stable, and easily maintainable automated tests Use the Page Object Model for the better test structure Master Selenium Webdriver Create Data-Driven Test Framework Enroll in this course on Udemy",
+        "text": "Welcome to Practice Test Automation! I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings. Experience and Expertise As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation. Beyond Test Automation Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you. Courses and Achievements In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer nine courses with over 70,000 students, including a BestSeller XPath course and a HighestRated Selenium course. With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey. A Resourceful Website This website was carefully crafted to host a diverse selection of articles, standalone lectures, tips, and examples for those interested in test automation. Moreover, with a practical platform already established, test automation beginners can easily put their skills into practice. Looking Ahead As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board! Explore and Learn Please be sure to visit our BLOG for engaging articles, speeches, and tutorials, and don’t miss our COURSES, designed to enrich your learning experience. Get a FREE XPath cheat sheet by Signing Up for our newsletter We don’t spam! Read more in our privacy policy",
         "locator": "div > div > section > div > div > article > div:nth-of-type(2)",
         "boundingBox": {
-          "top": 174.0625,
+          "top": 310.8625183105469,
           "left": 256.5,
           "width": 751.7999877929688,
-          "height": 6257.4375
+          "height": 1799.4375
         },
-        "scrollY": 136.8000030517578
+        "scrollY": 0
       },
       {
-        "tag": "li",
-        "text": "Prepare for interviews and build your job-ready portfolio",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(7)",
+        "tag": "p",
+        "text": "Welcome to Practice Test Automation!",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(1)",
         "boundingBox": {
-          "top": 790.8875122070312,
-          "left": 295.5,
-          "width": 673.7999877929688,
+          "top": 576.8624877929688,
+          "left": 268.5,
+          "width": 727.7999877929688,
           "height": 27.98750114440918
         },
-        "scrollY": 136.8000030517578
+        "scrollY": 0
       },
       {
-        "tag": "div",
-        "text": "Enroll in this course on Udemy",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2)",
+        "tag": "strong",
+        "text": "Welcome to Practice Test Automation!",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(1) > strong",
         "boundingBox": {
-          "top": 792.2750244140625,
+          "top": 579.2625122070312,
           "left": 268.5,
-          "width": 475.8000183105469,
-          "height": 62.48749923706055
+          "width": 318.25,
+          "height": 21.600000381469727
         },
-        "scrollY": 190.39999389648438
+        "scrollY": 0
       },
       {
-        "tag": "div",
-        "text": "Enroll in this course on Udemy",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div",
+        "tag": "p",
+        "text": "I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(2)",
         "boundingBox": {
-          "top": 792.2750244140625,
-          "left": 343.9125061035156,
-          "width": 324.9750061035156,
-          "height": 62.48749923706055
+          "top": 631.8500366210938,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 55.97500228881836
         },
-        "scrollY": 190.39999389648438
+        "scrollY": 0
       },
       {
-        "tag": "a",
-        "text": "Enroll in this course on Udemy",
-        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > div:nth-of-type(2) > div > a",
+        "tag": "p",
+        "text": "Experience and Expertise",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(3)",
         "boundingBox": {
-          "top": 792.2750244140625,
-          "left": 343.9125061035156,
-          "width": 324.9750061035156,
-          "height": 62.48749923706055
+          "top": 714.8250122070312,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 27.98750114440918
         },
-        "scrollY": 190.39999389648438
+        "scrollY": 0
+      },
+      {
+        "tag": "strong",
+        "text": "Experience and Expertise",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(3) > strong",
+        "boundingBox": {
+          "top": 717.2250366210938,
+          "left": 268.5,
+          "width": 207.71250915527344,
+          "height": 21.600000381469727
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(4)",
+        "boundingBox": {
+          "top": 769.8125,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 139.9375
+        },
+        "scrollY": 0
+      },
+      {
+        "tag": "p",
+        "text": "Beyond Test Automation",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5)",
+        "boundingBox": {
+          "top": 762.3500366210938,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 27.98750114440918
+        },
+        "scrollY": 174.39999389648438
+      },
+      {
+        "tag": "strong",
+        "text": "Beyond Test Automation",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(5) > strong",
+        "boundingBox": {
+          "top": 764.75,
+          "left": 268.5,
+          "width": 202.7624969482422,
+          "height": 21.600000381469727
+        },
+        "scrollY": 174.39999389648438
+      },
+      {
+        "tag": "p",
+        "text": "Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you.",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(6)",
+        "boundingBox": {
+          "top": 783.7374877929688,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 55.97500228881836
+        },
+        "scrollY": 208
+      },
+      {
+        "tag": "p",
+        "text": "Courses and Achievements",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7)",
+        "boundingBox": {
+          "top": 793.9125366210938,
+          "left": 268.5,
+          "width": 727.7999877929688,
+          "height": 27.98750114440918
+        },
+        "scrollY": 280.79998779296875
+      },
+      {
+        "tag": "strong",
+        "text": "Courses and Achievements",
+        "locator": "div > div > section > div > div > article > div:nth-of-type(2) > p:nth-of-type(7) > strong",
+        "boundingBox": {
+          "top": 796.3125,
+          "left": 268.5,
+          "width": 220.5625,
+          "height": 21.600000381469727
+        },
+        "scrollY": 280.79998779296875
       }
     ],
     "_seen": {}
